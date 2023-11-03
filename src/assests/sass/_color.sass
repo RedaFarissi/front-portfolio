@@ -1,0 +1,31 @@
+@import "./var"
+
+
+@for $i from 1 through 9 
+    .color-opacity-#{$i} 
+        color: rgba($bodyColor, $i * 0.1)
+
+    .color-to-bg-opacity-#{$i} 
+        background-color: rgba($bodyColor, $i * 0.1)
+
+    .bgColor-opacity-#{$i} 
+        background-color: rgba($bodyBgColor , $i * 0.1 )
+    
+    .bg-fill-opacity-#{$i} 
+        fill: rgba($bodyBgColor , $i * 0.1 )
+
+    .fill-opacity-#{$i} 
+        fill: rgba($bodyColor , $i * 0.1 )
+
+
+.bg-color
+  background-color: $bodyBgColor
+.color
+  color: $bodyColor
+.color-to-bg
+  background-color: $bodyColor
+
+.bg-fill
+  fill: $bodyBgColor
+.fill
+  fill: $bodyColor

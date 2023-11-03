@@ -1,0 +1,131 @@
+@import "../../assests/sass/var"
+@import "../../assests/sass/flex"
+@import "../../assests/sass/animation"
+@import "../../assests/sass/color"
+
+body
+    overflow-x: hidden
+
+.eskouni
+    margin-top: 60px
+    padding: 0 20px
+    .eskouni-box
+        margin-top: 20px
+        margin-bottom: 29px
+        .full-name
+            @extend %grandTitle
+            font-weight: 650
+            @include animationDirection("full-name", 0.7s , "left" ,-230px , 0px)
+        h6
+            padding: 17px 0
+            font-size: 30px 
+            font-weight: 600
+            latter-spacing: -6px
+            word-spacing: 0px
+            @include animationDirection("mini-title", 1.2s , "left" ,-230px , 0px)
+        p
+            font-size: 38px 
+            line-height: 43px
+            font-weight: 620
+            color: $bodyColor-opacity-5
+            latter-spacing: -6px
+            word-spacing: 0px
+            @include animationDirection("p-animation", 2.2s , "left" ,-230px , 0px)
+        .social-media-div
+            padding: 23px 0
+            @include animationDirection("social-media-div", 2.2s , "left" ,-230px , 0px)
+            a
+                display: inline-flex 
+                @extend %center-center 
+                width: 45px
+                height: 45px
+                margin-right: 9px
+                border-radius: 50%
+                border: 0.9px solid $bodyColor
+                margin-right:14px
+                span
+                    display: block
+                    i
+                        padding: 0
+                        font-size:22px
+                        color: $linkIconColor
+            .btn-github
+                background-color: $bg-github
+            .btn-linkedin
+                background-color: $bg-linkedin
+            .btn-facebook
+                background-color: $bg-facebook
+            .btn-gmail
+                background-color: $bg-gmail
+        .btn
+            margin-top:9px 
+            padding: 9px 20px
+            font-size: 20px
+            letter-spacing: 1px
+            background-color: $bodyColor
+            color: $bodyBgColor
+            @include animationDirection("btn-github", 2.2s , "left" ,-230px , 0px)
+            &:hover
+                background-color: $bodyBgColor
+                color: $bodyColor
+                border: 0.9px solid $bodyColor 
+    .eskouni-img
+        align-self: start
+        padding-left: 50px
+        @include animationDirection("eskouni-img", 1s , "bottom" ,-20px , 0px)
+        
+
+.what-i-do
+    @extend %grandTitle
+    font-weight: 649
+    margin-bottom: 100px
+    @include animationDirection("what-i-do", 1s , "bottom" ,-20px , 0px)
+
+.full-stack
+    margin-bottom: 104px 
+    .SvgBackEndIcon
+        @include animationEngine("animationEngine", 125s)
+        width: 1300px
+        position: absolute
+        top: 110vh
+        right:-50%
+        .cls-1
+            fill-rule: evenodd
+
+    .full-stack-img
+        fill: $bodyColor
+    .front-end-svg
+        @include animationDirection("front-end-svg", 1s , "left" ,-230px , 0px)
+    .back-end-svg
+        @include animationDirection("back-end-svg", 2s , "left" ,-230px , 0px)
+    .cloud-svg
+        @include animationDirection("cloud-svg", 3s , "left" ,-230px , 0px)
+    .full-stack-box
+        margin-top: 12px
+        padding-left: 100px 
+        h6
+            @extend %miniTitle
+            @include animationDirection("font-end-box-h6", 1s , "right" ,-230px , 0px)
+        .full-stack-icon-box
+            @extend %flex-center-center    
+            @include animationDirection("full-stack-icon-box", 1.7s , "right" ,-230px , 0px)
+            flex-wrap: wrap 
+            img
+                width:55px
+                margin-top: 20px
+                margin-right: 35px
+            .icon-bootstrap , .icon-laravel , .icon-vue
+                width: 45px
+            .icon-django
+                width: 70px
+        ul
+            @include animationDirection("ul-animation", 2.4s , "right" ,-230px , 0px)
+            li
+                list-style-type: none
+                color: $bodyColor-opacity-5
+                font-size: 20px
+                margin-top: 15px
+                i
+                    font-size: 23px
+                    -webkit-text-stroke: 0.7px black
+                    margin-right: 20px

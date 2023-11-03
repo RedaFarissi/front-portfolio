@@ -1,0 +1,41 @@
+@import "../../assests/sass/flex"
+@import "../../assests/sass/var"
+@import "../../assests/sass/animation"
+
+body
+  background-color: $bodyBgColor
+
+header 
+  padding: 25px  70px
+  nav 
+    background-color: $bodyBgColor
+    color: $bodyColor 
+    @extend %flex-between-center
+    @include animationDirection("header-nav", 1.2s , "top" ,-30px , 0px) 
+    h1
+      font-family: 'Amiri', serif
+      font-family: 'Cedarville Cursive', cursive
+      font-family: 'Dancing Script', cursive
+      font-size: 37px
+      &::before
+        content: "<  "
+      &::after
+        content: "  />"
+    ul
+      @extend %flex-center-center
+      li
+        list-style-type: none
+        a
+          text-decoration-line: none
+          font-size: 18px
+          font-weight:450
+          display: block
+          padding: 10px 27px
+          border-radius: 6px 
+          background-color: $bodyBgColor
+          color: $bodyColor
+          &:hover
+            background-color: $bodyColor
+            color: $bodyBgColor
+          &:focus
+            font-weight: 500

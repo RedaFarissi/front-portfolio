@@ -1,0 +1,47 @@
+@import "../../assests/sass/var"
+@import "../../assests/sass/flex"
+@import "../../assests/sass/animation"
+@import "../../assests/sass/color"
+
+
+.projects-intro
+    align-items: center   
+    @include animationDirection("projects-svg", 1s , "bottom" ,-30px , 0px)
+    svg
+        fill: $bodyColor
+    .projects-box
+        margin-top: -120px
+        h1
+            @extend %grandTitle
+        p
+            font-size: 25px 
+            color: $bodyColor-opacity-5
+.projects
+    font-family: Google Sans Regular
+    margin-bottom: 120px 
+    color: $bodyBgColor
+    .link
+        display: block
+        text-decoration-line: none
+        color: $bodyBgColor
+        font-weight: 550 
+        h4
+            margin-top:  5px     
+            font-size: 22px
+            font-weight: 550 
+        .card-body
+            font-size: 17px
+        .cart_animation_1 ,  .cart_animation_2 , .cart_animation_3 
+            @include animationDirection("card-body5", 1s , "top", -50px , 0px)
+        .cart_animation_4 ,  .cart_animation_5 , .cart_animation_6 
+            @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
+        .card-footer
+            font-size: 15px
+            color: rgba($bodyBgColor , 0.7)
+            .techno-used
+                text-align: right
+                .techno-used-img
+                    width: 30px
+                    padding: 3px
+                    margin: 2px
+            

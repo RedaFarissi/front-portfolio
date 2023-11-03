@@ -1,0 +1,19 @@
+@mixin animationDirection($animationName,$time,$property,$from,$to)
+  position: relative
+  animation: #{$animationName} $time
+  @keyframes #{$animationName}
+    0%
+      #{$property}: $from
+    100%
+      #{$property}: $to
+
+
+@mixin animationEngine($animationName,$time)
+  animation: #{$animationName} $time infinite
+  @keyframes #{$animationName}
+    0%
+      transform: rotate(0deg)
+    50%
+      transform: rotate(360deg)
+    100%
+      transform: rotate(0deg)
