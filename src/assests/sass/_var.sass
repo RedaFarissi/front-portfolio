@@ -4,18 +4,9 @@ $colorSuccess: #198754
 $colorBrown: brown
 $colorWarning : #ffc107
 $colorCiel : #0e6ba8
-$colorVioliet: #28004c
+$colorVioliet:#1f0039
 $colorLight: #edf9fe 
-
-//color in use 
-$bodyBgColor: $colorCiel
-$bodyColor: $colorLight
-$bodyColor-opacity-5: rgba($bodyColor , 0.5)
-
-$headerLinkColor : $colorVioliet
-$linkIconBgColor: $colorVioliet   
-$linkIconColor: $colorLight  
-$btnColor: $colorVioliet
+$colorDark: #212529
 
 // icon link color
 $bg-github:#000c24 
@@ -25,6 +16,11 @@ $bg-facebook: #1877f2
 
 
 
+//color in use 
+$bodyBgColor: $colorCiel
+$bodyColor: $colorLight
+$bodyColor-opacity-5: rgba($bodyColor , 0.5)
+
 %grandTitle
   font-size: 70px
   color:$bodyColor
@@ -33,6 +29,13 @@ $bg-facebook: #1877f2
 %miniTitle    
   font-size: 55px
   color:$bodyColor
+
+%paragraphStyle
+  line-height: 43px
+  font-weight: 620
+  color: $bodyColor-opacity-5
+  latter-spacing: -6px
+  words-spacing: -20px
   
 @function color-lightness($bgcolor)
   @if lightness($bgcolor) > 70

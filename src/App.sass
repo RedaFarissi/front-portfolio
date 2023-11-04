@@ -1,0 +1,17 @@
+@import "./assests/sass/var"
+@import "./assests/sass/flex"
+@import "./assests/sass/animation"
+
+body
+    &::-webkit-scrollbar 
+        width: 15px
+    &::-webkit-scrollbar-track 
+        background: $bodyColor
+        border-right: 1px solid $bodyColor
+    &::-webkit-scrollbar-thumb 
+        background: $bodyBgColor 
+        border: 3px solid $bodyColor
+        -webkit-border-radius: 10px  
+        border-radius: 8px
+        &:hover  
+            background: rgba( $bodyBgColor , 0.7)

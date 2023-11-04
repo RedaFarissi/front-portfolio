@@ -1,7 +1,7 @@
 import "./Footer.sass"
 
-export default function Footer(){
+export default function Footer(props){
     return(
-        <footer className="text-center">Made by <b>Reda Eskouni</b> ❤️</footer>
+        <footer onClick={props.asideHidden} className="text-center">Made by <b>Reda Eskouni</b> ❤️</footer>
     )
 }

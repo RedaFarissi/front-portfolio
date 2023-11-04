@@ -3,9 +3,9 @@ import "./Education.sass"
 import SvgMozilla from "./svg/SvgMozilla";
 import SvgEducation from "./svg/SvgEducation";
 
-export default function Education(){
+export default function Education(props){
     return(
-<main className="container">
+<main onClick={props.asideHidden} className="container">
     <div className="education row">
         <SvgEducation />
         <div className="education-box col-md-6 pt-5">

@@ -1,23 +1,12 @@
-import address_image from "../assests/images/address_image.svg";
-
-import blogs_image from "../assests/images/blogs_image.svg";
-import cloud_infrastructure from "../assests/images/cloud_infrastructure.svg";
-import codeInLogo from "../assests/images/codeInLogo.png";
-import contactMail from "../assests/images/contactMail.png";
-import developerActivity from "../assests/images/developerActivity.svg";
-import education from "../assests/images/education.svg";
-import experience from "../assests/images/experience.svg";
-import feelingProud from "../assests/images/feelingProud.svg";
-import github_logo from "../assests/images/github_logo.png";
-import googleAssistant from "../assests/images/googleAssistant.svg";
-import google_logo from "../assests/images/google_logo.png";
-import jsFramework from "../assests/images/jsFramework.svg";
-import manOnTable from "../assests/images/manOnTable.svg";
-import portfolio from "../assests/images/portfolio.gif";
-import programmer from "../assests/images/programmer.svg";
-import projects_image from "../assests/images/projects_image.svg";
-import talksCardBack from "../assests/images/talksCardBack.svg";
-import talksCardBackAlt from "../assests/images/talksCardBackAlt.svg";
+//themes
+import themeBrown   from "../assests/themes/themeBrown.png";
+import themeCeil    from "../assests/themes/themeCeil.png";
+import themeDanger  from "../assests/themes/themeDanger.png";
+import themeDark    from "../assests/themes/themeDark.png";
+import themeLight   from "../assests/themes/themeLight.png";
+import themeSuccess from "../assests/themes/themeSuccess.png";
+import themeViollet from "../assests/themes/themeViollet.png";
+import themeWarning from "../assests/themes/themeWarning.png";
 
 
 //logo
@@ -41,8 +30,8 @@ import books from "../assests/logo/books.png";
 
 
 const images = {
-    //assests/images
-    address_image,blogs_image ,cloud_infrastructure ,codeInLogo,contactMail ,developerActivity  ,education ,experience ,feelingProud ,github_logo  ,googleAssistant ,google_logo  ,jsFramework,manOnTable ,portfolio ,programmer ,projects_image ,talksCardBack ,talksCardBackAlt ,
+    //themes
+    themeBrown,themeCeil,themeDanger,themeDark,themeLight,themeSuccess,themeViollet,themeWarning,
     //Home
     html5,css,sass,js,bootstrap,react,vue,python,php ,django,laravel,docker,
     //Education 

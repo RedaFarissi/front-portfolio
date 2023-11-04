@@ -24,12 +24,8 @@ body
             word-spacing: 0px
             @include animationDirection("mini-title", 1.2s , "left" ,-230px , 0px)
         p
-            font-size: 38px 
-            line-height: 43px
-            font-weight: 620
-            color: $bodyColor-opacity-5
-            latter-spacing: -6px
-            word-spacing: 0px
+            font-size: 34px
+            @extend %paragraphStyle
             @include animationDirection("p-animation", 2.2s , "left" ,-230px , 0px)
         .social-media-div
             padding: 23px 0
@@ -48,7 +44,7 @@ body
                     i
                         padding: 0
                         font-size:22px
-                        color: $linkIconColor
+                        color: $bodyBgColor
             .btn-github
                 background-color: $bg-github
             .btn-linkedin
@@ -64,7 +60,7 @@ body
             letter-spacing: 1px
             background-color: $bodyColor
             color: $bodyBgColor
-            @include animationDirection("btn-github", 2.2s , "left" ,-230px , 0px)
+            @include animationDirection("btn-github", 3s , "left" ,-230px , 0px)
             &:hover
                 background-color: $bodyBgColor
                 color: $bodyColor

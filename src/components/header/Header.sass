@@ -7,6 +7,7 @@ body
 
 header 
   padding: 25px  70px
+  height: 90px 
   nav 
     background-color: $bodyBgColor
     color: $bodyColor 
@@ -39,3 +40,9 @@ header
             color: $bodyBgColor
           &:focus
             font-weight: 500
+        i
+          font-size: 18px 
+          margin-top: 9px 
+          margin-left: 33px
+          cursor: pointer
+          @include animationEngine("themes" , 8s)

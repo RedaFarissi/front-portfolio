@@ -2,7 +2,7 @@ import images  from "../../components/images";
 import SvgProject from "./svg/SvgProject";
 import "./Project.sass"
 
-export default function Project(){
+export default function Project(props){
     const github_project = [
         {id:"1", title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects",link:"https://github.com/RedaFarissi/" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker,]} ,
         {id:"2", title:"Front-End Ecommerce" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/front-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react]} ,  
@@ -38,7 +38,7 @@ export default function Project(){
 
     return (
 
-    <main className="container-fliud">
+    <main onClick={props.asideHidden} className="container-fliud">
         <div className="container">
             <div className="projects-intro row">
                 <SvgProject />

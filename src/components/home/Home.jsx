@@ -7,7 +7,7 @@ import Cloud from "./Cloud"
 
 export default function Home(props){
     return(
-    <main className="container">
+    <main onClick={props.asideHidden} className="container">
         <HomeRedaEskouni />
         <h1 className="what-i-do text-center">What I Do?</h1>
         <FrontEnd />
