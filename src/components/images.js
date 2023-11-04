@@ -1,12 +1,22 @@
 //themes
-import themeBrown   from "../assests/themes/themeBrown.png";
+import themeViolletLight from "../assests/themes/themeViolletLight.png";
+import themeBlueLight from "../assests/themes/themeBlueLight.png";
+import themeGreenLight from "../assests/themes/themeGreenLight.png";
+import themeRedLight from "../assests/themes/themeRedLight.png";
+import themeBlackLight from "../assests/themes/themeBlackLight.png";
+import themePinkLight from "../assests/themes/themePinkLight.png";
+import themeTealLight from "../assests/themes/themeTealLight.png";
+import themeOrangeLight from "../assests/themes/themeOrangeLight.png";
+import themeYellowLight from "../assests/themes/themeYellowLight.png";
+import themeMaterialDarkLight from "../assests/themes/themeMaterialDarkLight.png";
+import themeMaterialLight from "../assests/themes/themeMaterialLight.png";
+import themeMaterialTealLight from "../assests/themes/themeMaterialTealLight.png";
 import themeCeil    from "../assests/themes/themeCeil.png";
 import themeDanger  from "../assests/themes/themeDanger.png";
 import themeDark    from "../assests/themes/themeDark.png";
 import themeLight   from "../assests/themes/themeLight.png";
 import themeSuccess from "../assests/themes/themeSuccess.png";
 import themeViollet from "../assests/themes/themeViollet.png";
-import themeWarning from "../assests/themes/themeWarning.png";
 
 
 //logo
@@ -31,7 +41,7 @@ import books from "../assests/logo/books.png";
 
 const images = {
     //themes
-    themeBrown,themeCeil,themeDanger,themeDark,themeLight,themeSuccess,themeViollet,themeWarning,
+    themeViolletLight , themeBlueLight , themeGreenLight , themeRedLight , themeBlackLight , themePinkLight , themeTealLight , themeOrangeLight , themeYellowLight , themeMaterialDarkLight , themeMaterialLight , themeMaterialTealLight ,themeCeil,themeDanger,themeDark,themeLight,themeSuccess,themeViollet,
     //Home
     html5,css,sass,js,bootstrap,react,vue,python,php ,django,laravel,docker,
     //Education 

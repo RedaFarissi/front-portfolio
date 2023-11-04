@@ -1,0 +1,13 @@
+:root {
+  --bg-color: #0e6ba8;
+  --text-color: #edf9fe;
+  --text-color-opacity: #edf9fe92;
+}
+
+footer {
+  font-size: 20px;
+  padding: 45px;
+  font-family: "PT Serif", serif;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+}/*# sourceMappingURL=Footer.css.map */

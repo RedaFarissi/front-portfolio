@@ -3,6 +3,7 @@
 @import "../../assests/sass/animation"
 @import "../../assests/sass/color"
 
+
 body
     overflow-x: hidden
 
@@ -19,12 +20,10 @@ body
         h6
             padding: 17px 0
             font-size: 30px 
-            font-weight: 600
-            latter-spacing: -6px
-            word-spacing: 0px
+            @extend %paragraphStyle
             @include animationDirection("mini-title", 1.2s , "left" ,-230px , 0px)
         p
-            font-size: 34px
+            font-size: 33px
             @extend %paragraphStyle
             @include animationDirection("p-animation", 2.2s , "left" ,-230px , 0px)
         .social-media-div
@@ -85,6 +84,7 @@ body
         position: absolute
         top: 110vh
         right:-50%
+        opacity: 0.06
         .cls-1
             fill-rule: evenodd
 
