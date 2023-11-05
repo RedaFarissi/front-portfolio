@@ -4,16 +4,16 @@ import "./Project.sass"
 
 export default function Project(props){
     const github_project = [
-        {id:"1", title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects",link:"https://github.com/RedaFarissi/" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker,]} ,
-        {id:"2", title:"Front-End Ecommerce" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/front-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react]} ,  
-        {id:"3", title:"Back-End Ecommerce" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/back-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.django]} ,  
-        {id:"4", title:"Laravel Ecommerce" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/laravel_shop" , languageLogoUsed: [images.html5,images.css,images.js, images.php ,images.laravel]},
-        {id:"5", title:"Django Ecommerce" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/shopping" , languageLogoUsed: [images.html5,images.css,images.python,images.django]} ,  
-        {id:"6", title:"Parchessi Game" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/parchessi-algo" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react]} ,  
+        {id:"1",  title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects.",link:"https://github.com/RedaFarissi/portfolio" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
+        {id:"2",  title:"Front-End Ecommerce" ,  paragraph:"Crafted a responsive e-commerce front-end with React, delivering an elegant user interface. Seamlessly integrates with a secure back-end featuring robust authentication for a comprehensive shopping experience.",link:"https://github.com/RedaFarissi/front-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
+        {id:"3",  title:"Back-End Ecommerce" ,  paragraph:"Explore my GitHub back-end project for e-commerce. It features robust APIs, secure authentication, and efficient database management, ensuring a seamless connection with the front-end using Django Rest Framework.",link:"https://github.com/RedaFarissi/back-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.django,images.docker] , created:"2023"},
+        {id:"4",  title:"Laravel Ecommerce" ,  paragraph:"Experienced web developer adept in building e-commerce websites with Laravel. Expertise in crafting scalable and feature-rich platforms, ensuring seamless transactions and user experiences.",link:"https://github.com/RedaFarissi/laravel_shop" , languageLogoUsed: [images.html5,images.css,images.js, images.php ,images.laravel,images.docker] , created:"2023"},
+        {id:"5",  title:"Django Ecommerce" ,  paragraph:"Skilled web developer specializing in e-commerce solutions with Django. Proficient in creating scalable platforms with robust features, ensuring seamless transactions and exceptional user experiences.",link:"https://github.com/RedaFarissi/shopping" , languageLogoUsed: [images.html5,images.css,images.python,images.django,images.docker] , created:"2022"},
+        {id:"6",  title:"Parchessi Game" ,  paragraph:"Developed responsive game with React.js, featuring intricate and interactive gameplay mechanics. Proficient in handling diverse in-game conditions.",link:"https://github.com/RedaFarissi/parchessi-algo" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react,images.docker] , created:"2021"},
     ]
     var projects = github_project.map(e=>(
         <div className="col-lg-4 p-2 mb-3">
-            <a href={e.link} className="link p-2">
+            <a href={e.link} target="_blanck" className="link p-2">
                 <div className="card card-project m-0">
                     <div className="card-header color-to-bg">
                         <h4 className={`cart_animation_${e.id}`}><i className="fab fa-github me-2"></i> {e.title}</h4>
@@ -23,10 +23,10 @@ export default function Project(props){
                     </div>
                     <div className={`card-footer color-to-bg border-0`}>
                         <div className={`cart_animation_${e.id}`}>
-                            <span>Created on 2020</span>
+                            <span>Created on {e.created}</span>
                             <div className="techno-used">
                                 {e.languageLogoUsed.map(img=>(
-                                    <img src={img} className="techno-used-img" alt={`logo-${e.id}`}/>
+                                    <img src={img} className="techno-used-img" style={(img.includes('django'))?{width:"50px"}:{}} alt={`logo-${e.id}`}/>
                                 ))}
                             </div>
                         </div>
@@ -55,7 +55,9 @@ export default function Project(props){
             {projects}
             
         </div>
-        
+        <div className="d-flex justify-content-center align-items-center rounded">
+            <a className="btn more-project text-center" href="https://github.com/RedaFarissi/">More Project</a>
+        </div>
     </main>
     )
 }

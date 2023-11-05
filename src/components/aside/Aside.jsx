@@ -1,5 +1,5 @@
 import "./Aside.sass"
-import React, { useEffect } from 'react';
+import React from 'react';
 import images from "../images";
 
 export default function Aside(props){

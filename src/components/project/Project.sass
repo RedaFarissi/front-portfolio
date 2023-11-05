@@ -19,24 +19,28 @@
             
 .projects
     font-family: Google Sans Regular
-    margin-bottom: 120px 
-    //color: $bodyBgColor
+    margin-bottom: 30px 
     .link
         display: block
         text-decoration-line: none
         color: $bodyBgColor
         font-weight: 550 
+        .card
+            
         h4
             margin-top:  5px     
             font-size: 22px
             font-weight: 550 
         .card-body
             font-size: 17px
+            @extend %flex-center-center
+            height: 160px
         .cart_animation_1 ,  .cart_animation_2 , .cart_animation_3 
             @include animationDirection("card-body5", 1s , "top", -50px , 0px)
         .cart_animation_4 ,  .cart_animation_5 , .cart_animation_6 
             @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
         .card-footer
+            height: 90px
             font-size: 15px
             color: rgba($bodyBgColor , 0.7)
             .techno-used
@@ -45,4 +49,14 @@
                     width: 30px
                     padding: 3px
                     margin: 2px
-            
+
+.more-project
+    margin-bottom: 120px 
+    background-color: $bodyColor
+    font-size: 20px
+    color: $bodyBgColor
+    @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
+    &:hover
+        background-color: $bodyBgColor
+        color: $bodyColor 
+        border: 0.8px solid $bodyColor

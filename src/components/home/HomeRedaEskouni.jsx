@@ -21,7 +21,7 @@ export default function HomeRedaEskouni(){
                         <span><i className="fab fa-google text-light"></i></span>
                     </a>
                 </div>
-                <a className="btn"> <i class="fa-solid fa-star me-2 text-warning text-light"></i> Star Me On Github </a>
+                <a href="https://github.com/RedaFarissi" target="_blanck" className="btn"> <i class="fa-solid fa-star me-2 text-warning text-light"></i> Star Me On Github </a>
             </div>
             <SvgEskouni />
         </div>

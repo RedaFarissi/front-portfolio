@@ -23,15 +23,15 @@ $bodyColor-opacity-5: var(--text-color-opacity)
   latter-spacing: -6px
   words-spacing: -20px
   
-@function color-lightness($bgcolor)
-  @if lightness($bgcolor) > 70
-    @return $bodyColor
-  @else
-    @return white
+// @function color-lightness($bgcolor)
+//   @if lightness($bgcolor) > 70
+//     @return $bodyColor
+//   @else
+//     @return white
 
-@mixin color-mixin($bgColor)
-  background-color: $bgColor
-  color: color-lightness($bgColor)
+// @mixin color-mixin($bgColor)
+//   background-color: $bgColor
+//   color: color-lightness($bgColor)
 
 // fix icon color
 $bg-github:#000c24 
