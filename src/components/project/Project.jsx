@@ -12,16 +12,16 @@ export default function Project(props){
         {id:"6", title:"Parchessi Game" ,  paragraph:"pppp",link:"https://github.com/RedaFarissi/parchessi-algo" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react]} ,  
     ]
     var projects = github_project.map(e=>(
-        <div className="col-lg-4 mb-3">
-            <a href={e.link} className="link color-to-bg-opacity-3 p-2">
+        <div className="col-lg-4 p-2 mb-3">
+            <a href={e.link} className="link p-2">
                 <div className="card card-project m-0">
-                    <div className="card-header color-to-bg-opacity-8">
-                        <h4 className={`cart_animation_${e.id}`}><i className="fab fa-github me-2 text-dark"></i> {e.title}</h4>
+                    <div className="card-header color-to-bg">
+                        <h4 className={`cart_animation_${e.id}`}><i className="fab fa-github me-2"></i> {e.title}</h4>
                     </div>
-                    <div className="card-body  color-to-bg-opacity-8">
+                    <div className="card-body color-to-bg">
                         <p className={`card-text cart_animation_${e.id}`}>{e.paragraph}</p>
                     </div>
-                    <div className={`card-footer color-to-bg-opacity-8 border-0`}>
+                    <div className={`card-footer color-to-bg border-0`}>
                         <div className={`cart_animation_${e.id}`}>
                             <span>Created on 2020</span>
                             <div className="techno-used">

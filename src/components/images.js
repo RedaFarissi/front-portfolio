@@ -12,11 +12,6 @@ import themeMaterialDarkLight from "../assests/themes/themeMaterialDarkLight.png
 import themeMaterialLight from "../assests/themes/themeMaterialLight.png";
 import themeMaterialTealLight from "../assests/themes/themeMaterialTealLight.png";
 import themeCeil    from "../assests/themes/themeCeil.png";
-import themeDanger  from "../assests/themes/themeDanger.png";
-import themeDark    from "../assests/themes/themeDark.png";
-import themeLight   from "../assests/themes/themeLight.png";
-import themeSuccess from "../assests/themes/themeSuccess.png";
-import themeViollet from "../assests/themes/themeViollet.png";
 
 
 //logo
@@ -41,7 +36,7 @@ import books from "../assests/logo/books.png";
 
 const images = {
     //themes
-    themeViolletLight , themeBlueLight , themeGreenLight , themeRedLight , themeBlackLight , themePinkLight , themeTealLight , themeOrangeLight , themeYellowLight , themeMaterialDarkLight , themeMaterialLight , themeMaterialTealLight ,themeCeil,themeDanger,themeDark,themeLight,themeSuccess,themeViollet,
+    themeViolletLight , themeBlueLight , themeGreenLight , themeRedLight , themeBlackLight , themePinkLight , themeTealLight , themeOrangeLight , themeYellowLight , themeMaterialDarkLight , themeMaterialLight , themeMaterialTealLight ,themeCeil,
     //Home
     html5,css,sass,js,bootstrap,react,vue,python,php ,django,laravel,docker,
     //Education 

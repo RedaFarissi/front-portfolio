@@ -76,6 +76,7 @@ body
     margin-bottom: 100px
     @include animationDirection("what-i-do", 1s , "bottom" ,-20px , 0px)
 
+
 .full-stack
     margin-bottom: 104px 
     .SvgBackEndIcon
@@ -87,7 +88,6 @@ body
         opacity: 0.06
         .cls-1
             fill-rule: evenodd
-
     .full-stack-img
         fill: $bodyColor
     .front-end-svg
@@ -96,8 +96,13 @@ body
         @include animationDirection("back-end-svg", 2s , "left" ,-230px , 0px)
     .cloud-svg
         @include animationDirection("cloud-svg", 3s , "left" ,-230px , 0px)
+    
+
+
+    .full-stack-box-back-end
+        margin-top:  -90px
     .full-stack-box
-        margin-top: 12px
+       
         padding-left: 100px 
         h6
             @extend %miniTitle
@@ -125,3 +130,5 @@ body
                     font-size: 23px
                     -webkit-text-stroke: 0.7px black
                     margin-right: 20px
+.full-stack-cloud
+    margin-top: -200px 
