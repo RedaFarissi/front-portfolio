@@ -1,8 +1,12 @@
 import images  from "../../components/images";
 import SvgProject from "./svg/SvgProject";
 import "./Project.sass"
+import { useEffect } from "react";
 
 export default function Project(props){
+    useEffect(()=>{
+        props.removeSplash()
+    },[])
     const github_project = [
         {id:"1",  title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects.",link:"https://github.com/RedaFarissi/portfolio" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
         {id:"2",  title:"Front-End Ecommerce" ,  paragraph:"Crafted a responsive e-commerce front-end with React, delivering an elegant user interface. Seamlessly integrates with a secure back-end featuring robust authentication for a comprehensive shopping experience.",link:"https://github.com/RedaFarissi/front-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},

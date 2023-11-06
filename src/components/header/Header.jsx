@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 export default function Header(props){
     return (
-    <header onClick={props.asideHidden} className='header'>
+    <header style={(props.splash)?{display:"none"}:{display:"block"}} onClick={props.asideHidden} className='header'>
         <nav>
-          <h1>Reda Eskouni</h1>
+          <h1><Link to='/'>Reda Eskouni</Link></h1>
           <ul>
             <li><Link to='/home'>Home</Link> </li>
             <li><Link to='/education'>Education</Link></li>

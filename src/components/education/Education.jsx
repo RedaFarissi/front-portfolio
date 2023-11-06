@@ -2,8 +2,12 @@ import images  from "../../components/images";
 import "./Education.sass"
 import SvgMozilla from "./svg/SvgMozilla";
 import SvgEducation from "./svg/SvgEducation";
+import { useEffect } from "react";
 
 export default function Education(props){
+    useEffect(()=>{
+        props.removeSplash()
+    },[])
     return(
 <main onClick={props.asideHidden} className="container">
     <div className="education row">

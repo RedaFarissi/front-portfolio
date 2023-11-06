@@ -32,15 +32,15 @@ import w3Schools_logo from "../assests/logo/w3Schools-logo.png";
 import miage_logo from "../assests/logo/miage-logo.webp";
 import ensa from "../assests/logo/ensa.png";
 import books from "../assests/logo/books.png";
+import reda from "../assests/logo/reda.png";
 
 
 const images = {
     //themes
     themeViolletLight , themeBlueLight , themeGreenLight , themeRedLight , themeBlackLight , themePinkLight , themeTealLight , themeOrangeLight , themeYellowLight , themeMaterialDarkLight , themeMaterialLight , themeMaterialTealLight ,themeCeil,
-    //Home
-    html5,css,sass,js,bootstrap,react,vue,python,php ,django,laravel,docker,
-    //Education 
-    w3Schools_logo , miage_logo , ensa , books
+    
+    //logo
+    html5,css,sass,js,bootstrap,react,vue,python,php ,django,laravel,docker, w3Schools_logo , miage_logo , ensa , books , reda 
 }
 
 export default images ;

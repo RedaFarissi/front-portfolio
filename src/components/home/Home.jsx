@@ -4,8 +4,12 @@ import HomeRedaEskouni from "./HomeRedaEskouni"
 import FrontEnd from "./FrontEnd"
 import BackEnd from "./BackEnd"
 import Cloud from "./Cloud"
+import { useEffect } from 'react';
 
 export default function Home(props){
+    useEffect(()=>{
+        props.removeSplash()
+    },[])
     return(
     <main onClick={props.asideHidden} className="container">
         <HomeRedaEskouni />

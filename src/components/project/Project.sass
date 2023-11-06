@@ -3,7 +3,8 @@
 @import "../../assests/sass/animation"
 @import "../../assests/sass/color"
 
-
+.header
+    display: block
 .projects-intro
     align-items: center   
     @include animationDirection("projects-svg", 1s , "bottom" ,-30px , 0px)
@@ -54,9 +55,12 @@
     margin-bottom: 120px 
     background-color: $bodyColor
     font-size: 20px
+    padding: 7px 35px
     color: $bodyBgColor
     @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
     &:hover
         background-color: $bodyBgColor
         color: $bodyColor 
         border: 0.8px solid $bodyColor
+    &:focus
+        box-shadow: none

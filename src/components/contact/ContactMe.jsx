@@ -1,10 +1,12 @@
 import "./ContactMe.sass"
 import React, { useEffect, useRef } from 'react';
 import SvgMail from "./svg/SvgMail";
+import images from "../images";
 
 export default function ContactMe(props){
     const cadreImageRef = useRef(null);
     useEffect(() => {
+        props.removeSplash()
         const cadreImageHeight =()=>{
             if (cadreImageRef.current) {
                 const cadreWidthPercent = parseFloat(getComputedStyle(cadreImageRef.current).width);
@@ -15,11 +17,12 @@ export default function ContactMe(props){
     }, []);
 
     return(
+        
     <main onClick={props.asideHidden} className="container main">
         <div className="contact row">
             <div className="col-md-6">
-                <div ref={cadreImageRef} className="contact-img rounded-circle d-flex justify-content-center align-items-center border border-5">
-                    <i className="fa-solid fa-user"></i>
+                <div ref={cadreImageRef} className="contact-img">
+                   <img src={images.reda} alt="reda profile"  />
                 </div>
             </div>
             <div className="contact-box col-md-6">

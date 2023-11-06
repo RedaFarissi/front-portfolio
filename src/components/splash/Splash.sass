@@ -1,0 +1,53 @@
+@import "../../assests/sass/var"
+@import "../../assests/sass/flex"
+@import "../../assests/sass/animation"
+@import "../../assests/sass/color"
+
+.conatiner-splash
+    width: 100%
+    height: calc(100vh - 90px)
+    background-color: white
+    @extend %flex-center-center
+    
+.splash
+    @extend %flex-center-center
+    width: 0px
+    height: 0px 
+    border-radius: 50%
+    background: $bodyBgColor
+    animation: splach-cadre 1s linear forwards
+    position: relative
+    @keyframes splach-cadre 
+        100%
+            width: 100%
+            height: 100%
+            border-radius: 0px
+    .splash-h1
+      font-family: 'Amiri', serif
+      font-family: 'Cedarville Cursive', cursive
+      font-family: 'Dancing Script', cursive
+      font-size: 0px
+      color: $bodyBgColor
+      animation: full-name-splash 1s linear forwards
+      animation-delay: 1s
+      @keyframes full-name-splash
+        0% 
+            font-size: 200px
+            color: $bodyBgColor
+        100% 
+            font-size: 200px
+            color: $bodyColor
+      &:before            
+        content: ''            
+        position: absolute            
+        left: -20%      
+        width: 120%            
+        height: 100% 
+        animation: animate-heading 5s linear forwards infinite  
+        animation-delay: 1s       
+        @keyframes animate-heading                
+            0%                    
+                background: linear-gradient(90deg, transparent 0%, $bodyBgColor 5%, $bodyBgColor 100%)
+                left: 0%                
+            100%                     
+                left:220%

@@ -9,8 +9,11 @@
     @include animationDirection("contact", 2s , "bottom" , -30px , 0px)
     .contact-img
         width: 80%
-        i
-            font-size: 220px
+        @extend %flex-center-center
+        img
+            margin-top: -15%
+            width: 75%
+            height: 75%
     .contact-box    
         align-self: center
         h1
@@ -18,9 +21,10 @@
         p
             font-size: 28px
             @extend %paragraphStyle
+            margin-bottom: 20px 
         .linkt-to-contact
             ul
-                @extend %flex-center-center
+                display: flex
                 li
                     list-style-type: none
                     a
@@ -31,7 +35,7 @@
                         margin-right: 9px
                         border-radius: 50%
                         border: 0.9px solid $bodyColor
-                        margin-right:14px
+                       
                         span
                             display: block
                             i
