@@ -1,12 +1,14 @@
 import images  from "../../components/images";
-import SvgBackEnd from "./svg/SvgBackEnd"
 import SvgBackEndIcon from "./svg/SvgBackEndIcon"
 
 export default function BackEnd(){
     return(
     <div className="full-stack row">
         <SvgBackEndIcon/>
-        <SvgBackEnd />
+        <img 
+            className="full-stack-img back-end-svg col-md-6" 
+            src={images.backEnd} alt="backEnd" 
+        />
         <div className="full-stack-box full-stack-box-back-end col-md-6">
             <h6>Back-end web development</h6>
             <div className="full-stack-icon-box" >

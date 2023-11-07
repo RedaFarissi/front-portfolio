@@ -7,14 +7,25 @@ $bodyBgColor: var(--bg-color)
 $bodyColor: var(--text-color)
 $bodyColor-opacity-5: var(--text-color-opacity)
 
+
+
 %grandTitle
   font-size: 70px
   color:$bodyColor
   margin-top: 45px
-
+  @media (max-width: 1200px) 
+    font-size: 56px
+  @media (max-width: 993px) 
+    font-size: 49px
+  @media (max-width: 767px) 
+    font-size: 47px
 %miniTitle    
   font-size: 55px
   color:$bodyColor
+  @media (max-width: 1200px) 
+    font-size: 44px
+  @media (max-width: 993px) 
+    font-size: 37px
 
 %paragraphStyle
   line-height: 43px
@@ -22,16 +33,7 @@ $bodyColor-opacity-5: var(--text-color-opacity)
   color: $bodyColor-opacity-5
   latter-spacing: -6px
   words-spacing: -20px
-  
-// @function color-lightness($bgcolor)
-//   @if lightness($bgcolor) > 70
-//     @return $bodyColor
-//   @else
-//     @return white
 
-// @mixin color-mixin($bgColor)
-//   background-color: $bgColor
-//   color: color-lightness($bgColor)
 
 // fix icon color
 $bg-github:#000c24 

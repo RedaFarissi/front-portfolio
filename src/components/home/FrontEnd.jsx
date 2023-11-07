@@ -18,8 +18,7 @@ export default function FrontEnd(){
                 </div>
                 <ul>
                     <li>
-                        <i class="fa-solid fa-bolt text-warning"></i>
-                        Building responsive website front end using React.js
+                        <i class="fa-solid fa-bolt text-warning"></i>Building responsive website using React.js
                     </li>
                     <li>
                         <i class="fa-solid fa-bolt text-warning"></i> 

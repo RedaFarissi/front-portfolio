@@ -6,26 +6,45 @@
 
 body
     overflow-x: hidden
-
+    #home
+        padding: 12px 45px
+        @media (max-width: 1200px) 
+            padding: 0px 25px
+        
 .eskouni
     margin-top: 60px
     padding: 0 20px
+    @media (max-width: 767px) 
+        padding: 0px 0px
     .eskouni-box
         margin-top: 20px
         margin-bottom: 29px
+        @media (max-width: 767px) 
+            margin-top: 0px
+            margin-bottom: 0px
+            text-align: center
+            width: 100%
         .full-name
             @extend %grandTitle
             font-weight: 650
             @include animationDirection("full-name", 0.7s , "left" ,-230px , 0px)
         h6
             padding: 17px 0
-            font-size: 30px 
+            font-size: 33px 
             @extend %paragraphStyle
             @include animationDirection("mini-title", 1.2s , "left" ,-230px , 0px)
+            @media (max-width: 1200px) 
+                font-size: 26.4px
+            @media (max-width: 993px) 
+                font-size: 23.1px
         p
-            font-size: 33px
+            font-size: 30px
             @extend %paragraphStyle
             @include animationDirection("p-animation", 2.2s , "left" ,-230px , 0px)
+            @media (max-width: 1200px) 
+                font-size: 24px
+            @media (max-width: 993px) 
+                font-size: 20px
         .social-media-div
             padding: 23px 0
             @include animationDirection("social-media-div", 2.2s , "left" ,-230px , 0px)
@@ -67,18 +86,19 @@ body
     .eskouni-img
         align-self: start
         padding-left: 50px
-        @include animationDirection("eskouni-img", 1s , "bottom" ,-20px , 0px)
-        
+        @include animationDirection("eskouni-img", 1s , "bottom" ,-30px , 0px)
+
 
 .what-i-do
     @extend %grandTitle
     font-weight: 649
     margin-bottom: 100px
     @include animationDirection("what-i-do", 1s , "bottom" ,-20px , 0px)
-
+    @media (max-width: 767px) 
+        margin-bottom: 20px
 
 .full-stack
-    margin-bottom: 104px 
+    margin-bottom: 24px 
     .SvgBackEndIcon
         @include animationEngine("animationEngine", 125s)
         width: 1300px
@@ -96,13 +116,11 @@ body
         @include animationDirection("back-end-svg", 2s , "left" ,-230px , 0px)
     .cloud-svg
         @include animationDirection("cloud-svg", 3s , "left" ,-230px , 0px)
-    
-
 
     .full-stack-box-back-end
         margin-top:  -90px
+
     .full-stack-box
-       
         padding-left: 100px 
         h6
             @extend %miniTitle
@@ -112,9 +130,11 @@ body
             @include animationDirection("full-stack-icon-box", 1.7s , "right" ,-230px , 0px)
             flex-wrap: wrap 
             img
-                width:55px
+                width :55px
                 margin-top: 20px
                 margin-right: 35px
+                @media (max-width: 1200px) 
+                    width: 45px
             .icon-bootstrap , .icon-laravel , .icon-vue
                 width: 45px
             .icon-django
@@ -126,9 +146,9 @@ body
                 color: $bodyColor-opacity-5
                 font-size: 20px
                 margin-top: 15px
+                @media (max-width: 1200px) 
+                    font-size: 17px
                 i
                     font-size: 23px
                     -webkit-text-stroke: 0.7px black
                     margin-right: 20px
-.full-stack-cloud
-    margin-top: -200px 

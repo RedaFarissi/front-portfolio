@@ -13,7 +13,8 @@ import themeMaterialLight from "../assests/themes/themeMaterialLight.png";
 import themeMaterialTealLight from "../assests/themes/themeMaterialTealLight.png";
 import themeCeil    from "../assests/themes/themeCeil.png";
 
-
+//home
+import backEnd from "../assests/logo/back-end.png"
 //logo
 import html5 from "../assests/logo/html5.svg";
 import css from "../assests/logo/css.svg";
@@ -36,6 +37,7 @@ import reda from "../assests/logo/reda.png";
 
 
 const images = {
+    backEnd,
     //themes
     themeViolletLight , themeBlueLight , themeGreenLight , themeRedLight , themeBlackLight , themePinkLight , themeTealLight , themeOrangeLight , themeYellowLight , themeMaterialDarkLight , themeMaterialLight , themeMaterialTealLight ,themeCeil,
     

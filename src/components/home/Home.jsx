@@ -11,7 +11,7 @@ export default function Home(props){
         props.removeSplash()
     },[])
     return(
-    <main onClick={props.asideHidden} className="container">
+    <main onClick={props.asideHidden} id='home'>
         <HomeRedaEskouni />
         <h1 className="what-i-do text-center">What I Do?</h1>
         <FrontEnd />

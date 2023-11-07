@@ -13,21 +13,21 @@ export default function SvgFrontEnd(){
     <rect width="456.007" height="683.091" x="56.082" fill="#3f3d56"/>
     <rect width="428.426" height="209.616" x="83.663" y="237.197" fill="#2f2e41"/>
     <rect width="423.829" height="199.503" x="256.504" y="241.794" className="bg-fill"/>
-    <rect width="94.695" height="34.017" x="282.476" y="271.214"fill="white"/>
-    <rect width="348.441" height="9.194" x="305.92" y="330.973" fill="white"/>
-    <rect width="348.441" height="9.194" x="305.92" y="354.876" fill="white"/>
-    <rect width="348.441" height="9.194" x="305.92" y="378.78"  fill="white"/>
-    <rect width="348.441" height="9.194" x="305.92" y="402.684" fill="white"/>
+    <rect width="94.695" height="34.017" x="282.476" y="271.214"className="fill"/>
+    <rect width="348.441" height="9.194" x="305.92" y="330.973" className="fill"/>
+    <rect width="348.441" height="9.194" x="305.92" y="354.876" className="fill"/>
+    <rect width="348.441" height="9.194" x="305.92" y="378.78"  className="fill"/>
+    <rect width="348.441" height="9.194" x="305.92" y="402.684" className="fill"/>
     <rect width="94.695" height="34.017" x="86.421" y="77.227" className="bg-fill"/>
-    <rect width="348.441" height="9.194" x="109.865" y="136.986" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="109.865" y="160.89" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="109.865" y="184.793" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="109.865" y="208.697" fill="#f2f2f2"/>
+    <rect width="348.441" height="9.194" x="109.865" y="136.986" className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="109.865" y="160.89"  className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="109.865" y="184.793" className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="109.865" y="208.697" className="bg-fill"/>
     <rect width="94.695" height="34.017" x="90.098" y="467.959" className="bg-fill" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="113.542" y="527.718" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="113.542" y="551.621" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="113.542" y="575.525" fill="#f2f2f2"/>
-    <rect width="348.441" height="9.194" x="113.542" y="599.429" fill="#f2f2f2"/>
+    <rect width="348.441" height="9.194" x="113.542" y="527.718" className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="113.542" y="551.621" className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="113.542" y="575.525" className="bg-fill"/>
+    <rect width="348.441" height="9.194" x="113.542" y="599.429" className="bg-fill"/>
     <path fill="#ffb9b9" d="M792.56281,219.0309s18.90356,24.22018,16.54061,41.35153S848.092,236.753,848.092,236.753s-14.17767-29.53681-6.4981-43.71448S792.56281,219.0309,792.56281,219.0309Z" transform="translate(-69.5 -78.57247)"/>
     <path fill="#2f2e41" d="M858.72526,709.34191s24.81092,27.17386,20.67577,33.08122-76.7957,28.35533-85.066,27.17386-12.40546-7.08883-9.45178-8.861,21.85724-11.81472,21.85724-11.81472l15.94988-18.31282s11.81472-6.4981,11.81472-10.04252S858.72526,709.34191,858.72526,709.34191Z" transform="translate(-69.5 -78.57247)"/>
     <path fill="#ffb9b9" d="M816.783,739.46945s-9.45177,15.35914-11.224,15.94988,8.861,21.85723,8.861,21.85723L839.231,769.597l13.58693-11.224-2.95368-15.35914Z" transform="translate(-69.5 -78.57247)"/>
