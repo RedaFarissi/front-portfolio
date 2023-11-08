@@ -8,15 +8,25 @@
 .projects-intro
     align-items: center   
     @include animationDirection("projects-svg", 1s , "bottom" ,-30px , 0px)
+    @media (max-width: 992px) 
+        height: max-content
+        margin-top: 103px 
+        
     svg
         fill: $bodyColor
+        @media (max-width: 992px) 
+            height: max-content
+            
     .projects-box
         margin-top: -120px
         h1
             @extend %grandTitle
         p
             font-size: 25px 
-            color: $bodyColor-opacity-5
+            @extend %paragraphStyle
+            @media (max-width: 1200px) 
+                font-size: 20px 
+
             
 .projects
     font-family: Google Sans Regular

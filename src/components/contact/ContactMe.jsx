@@ -20,6 +20,7 @@ export default function ContactMe(props){
         
     <main onClick={props.asideHidden} className="container main">
         <div className="contact row">
+            
             <div className="col-md-6">
                 <div ref={cadreImageRef} className="contact-img">
                    <img src={images.reda} alt="reda profile"  />
@@ -59,7 +60,7 @@ export default function ContactMe(props){
         <div className="adress row">
             <div className="adress-box  col-md-6 pt-5">
                 <h3>Address</h3>
-                <p className="text-center"> Sidi Slimane : 34.258471, -5.941529</p>
+                <p> Hay Malek Al Ghazi Sidi Slimane </p>
                 <a className="btn color-to-bg" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
             </div>
             <SvgMail />

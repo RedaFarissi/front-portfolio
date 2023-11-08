@@ -19,7 +19,7 @@ export default function SvgEskouni(){
        <polygon fill="#3f3d56" points="595.257 518.148 624.857 518.148 637.19 509.515 581.691 509.515 595.257 518.148"/>
        <polygon fill="#3f3d56" points="595.257 568.713 624.857 568.713 637.19 560.08 581.691 560.08 595.257 568.713"/>
        <path fill="#3f3d56" d="M859.81989,235.61493H610.63446a9.4227,9.4227,0,0,0-9.42389,9.42389V412.89655a9.4227,9.4227,0,0,0,9.42389,9.42388h94.5929l-3.54389,22.62623s-20.25281,10.75927-6.01251,11.07574,81.32764,0,81.32764,0,12.97448,0-7.59479-11.39221l-3.33362-22.30976h93.7497a9.42266,9.42266,0,0,0,9.42388-9.42388V245.03882A9.42266,9.42266,0,0,0,859.81989,235.61493Z" transform="translate(-244.40605 -115.15866)"/>
-       <rect width="249.996" height="139.871" x="365.823" y="130.424" fill="#f2f2f2"/>
+       <rect width="249.996" height="139.871" x="365.823" y="130.424" className="bg-fill"/>
        <circle cx="490.821" cy="125.994" r="1.582" fill="#f2f2f2"/>
        <circle cx="490.821" cy="294.346" r="6.013" fill="#f2f2f2"/>
        <polygon fill="#3f3d56" points="481.452 357.952 481.452 361.117 311.202 361.117 311.202 358.585 311.436 357.952 315.632 346.56 477.971 346.56 481.452 357.952"/>
@@ -44,24 +44,24 @@ export default function SvgEskouni(){
        <path fill="#ffb8b8" d="M254.59773,380.5769l48.34772,74.82386s29.92954,37.98749,39.13863,20.72045-32.23181-46.04545-32.23181-46.04545L278.77159,372.519Z" transform="translate(-244.40605 -115.15866)"/>
        <path fill="#2f2e41" d="M278.77159,240.13828,269.5625,237.836s-18.41818,5.75568-23.02272,29.92954-1.15114,120.86931,4.60454,122.02044,28.42725-16.83663,32.05624-13.02286-7.88238-15.75554-4.429-26.11577S278.77159,240.13828,278.77159,240.13828Z" transform="translate(-244.40605 -115.15866)"/>
        <g id="f3c2397c-d780-4cc6-97d8-1503d8277a2c" data-name="Group 13">
-       <rect id="ad41612f-86f7-46b2-a964-3a5da7bcf3cf" width="29.752" height="7.163" x="437.407" y="176.363" className="bg-fill-opacity-6" data-name="Rectangle 55"/>
-       <rect id="b9a0b375-cc2a-4c59-8850-661af54e4f62" width="10.468" height="7.163" x="559.722" y="176.363" className="bg-fill-opacity-6" data-name="Rectangle 56"/>
-       <rect id="e174c2ab-9bc5-41ec-b37c-b06fbf8a9878" width="10.468" height="7.163" x="580.659" y="176.363" className="bg-fill-opacity-6" data-name="Rectangle 57"/>
-       <rect id="ba2479ac-4c7d-43b4-a028-73b1e20e4002" width="71.075" height="7.163" x="477.628" y="176.363" className="bg-fill-opacity-6" data-name="Rectangle 58"/>
-       <rect id="ac60ef86-00f2-480b-8171-28b6fdfc1958" width="29.752" height="7.163" x="399.941" y="222.644" className="bg-fill-opacity-6" data-name="Rectangle 59"/>
-       <rect id="b3d8298d-cd65-487a-8b19-4cee946356e7" width="10.468" height="7.163" x="522.256" y="222.644" className="bg-fill-opacity-6" data-name="Rectangle 60"/>
-       <rect id="ed27f15f-f0c4-4569-8330-a6688f8e356c" width="10.468" height="7.163" x="543.193" y="222.644" className="bg-fill-opacity-6" data-name="Rectangle 61"/>
-       <rect id="f685c005-adaf-4d60-acda-005b037d82a6" width="71.075" height="7.163" x="440.162" y="222.644" className="bg-fill-opacity-6" data-name="Rectangle 62"/>
-       <rect id="eca7c7fc-83f8-48ca-a588-6606db47af3f" width="29.752" height="7.163" x="522.807" y="192.341" className="bg-fill-opacity-6" data-name="Rectangle 63"/>
-       <rect id="a71b5b2f-f8b9-481d-a301-5e3357e5fe42" width="29.752" height="7.163" x="563.028" y="192.341" className="bg-fill-opacity-6" data-name="Rectangle 64"/>
-       <rect id="abb3a25a-f854-41fc-8391-e6ad9fbe2417" width="10.468" height="7.163" x="399.941" y="192.341" className="bg-fill-opacity-6" data-name="Rectangle 66"/>
-       <rect id="add2b425-b775-4eb5-9c25-8c4c14f957c9" width="10.468" height="7.163" x="420.878" y="192.341" className="bg-fill-opacity-6" data-name="Rectangle 67"/>
-       <rect id="b7159612-3b84-4b0b-a885-612eaab04c06" width="71.075" height="7.163" x="441.815" y="192.341" className="bg-fill-opacity-6" data-name="Rectangle 68"/>
-       <rect id="edfc7301-4de5-47dc-80e2-1ae2da982d6d" width="29.752" height="7.163" x="461.099" y="207.768" className="bg-fill-opacity-6" data-name="Rectangle 69"/>
-       <rect id="e1009f91-6275-4375-80fa-0d778e331fdc" width="29.752" height="7.163" x="420.878" y="207.768" className="bg-fill-opacity-6" data-name="Rectangle 70"/>
-       <rect id="a060fb9f-1f1a-4862-9a69-16dd49199e18" width="10.468" height="7.163" x="399.941" y="207.768" className="bg-fill-opacity-6" data-name="Rectangle 71"/>
-       <rect id="b6754d5f-104f-449c-b9a9-cf9ac82bf5fe" width="10.468" height="7.163" x="582.312" y="207.768" className="bg-fill-opacity-6" data-name="Rectangle 73"/>
-       <rect id="e6ed1ccd-2cfd-450f-a339-07df3a1ee6bb" width="71.075" height="7.163" x="500.768" y="207.768" className="bg-fill-opacity-6" data-name="Rectangle 74"/>
+       <rect id="ad41612f-86f7-46b2-a964-3a5da7bcf3cf" width="29.752" height="7.163" x="437.407" y="176.363" className="fill" data-name="Rectangle 55"/>
+       <rect id="b9a0b375-cc2a-4c59-8850-661af54e4f62" width="10.468" height="7.163" x="559.722" y="176.363" className="fill" data-name="Rectangle 56"/>
+       <rect id="e174c2ab-9bc5-41ec-b37c-b06fbf8a9878" width="10.468" height="7.163" x="580.659" y="176.363" className="fill" data-name="Rectangle 57"/>
+       <rect id="ba2479ac-4c7d-43b4-a028-73b1e20e4002" width="71.075" height="7.163" x="477.628" y="176.363" className="fill" data-name="Rectangle 58"/>
+       <rect id="ac60ef86-00f2-480b-8171-28b6fdfc1958" width="29.752" height="7.163" x="399.941" y="222.644" className="fill" data-name="Rectangle 59"/>
+       <rect id="b3d8298d-cd65-487a-8b19-4cee946356e7" width="10.468" height="7.163" x="522.256" y="222.644" className="fill" data-name="Rectangle 60"/>
+       <rect id="ed27f15f-f0c4-4569-8330-a6688f8e356c" width="10.468" height="7.163" x="543.193" y="222.644" className="fill" data-name="Rectangle 61"/>
+       <rect id="f685c005-adaf-4d60-acda-005b037d82a6" width="71.075" height="7.163" x="440.162" y="222.644" className="fill" data-name="Rectangle 62"/>
+       <rect id="eca7c7fc-83f8-48ca-a588-6606db47af3f" width="29.752" height="7.163" x="522.807" y="192.341" className="fill" data-name="Rectangle 63"/>
+       <rect id="a71b5b2f-f8b9-481d-a301-5e3357e5fe42" width="29.752" height="7.163" x="563.028" y="192.341" className="fill" data-name="Rectangle 64"/>
+       <rect id="abb3a25a-f854-41fc-8391-e6ad9fbe2417" width="10.468" height="7.163" x="399.941" y="192.341" className="fill" data-name="Rectangle 66"/>
+       <rect id="add2b425-b775-4eb5-9c25-8c4c14f957c9" width="10.468" height="7.163" x="420.878" y="192.341" className="fill" data-name="Rectangle 67"/>
+       <rect id="b7159612-3b84-4b0b-a885-612eaab04c06" width="71.075" height="7.163" x="441.815" y="192.341" className="fill" data-name="Rectangle 68"/>
+       <rect id="edfc7301-4de5-47dc-80e2-1ae2da982d6d" width="29.752" height="7.163" x="461.099" y="207.768" className="fill" data-name="Rectangle 69"/>
+       <rect id="e1009f91-6275-4375-80fa-0d778e331fdc" width="29.752" height="7.163" x="420.878" y="207.768" className="fill" data-name="Rectangle 70"/>
+       <rect id="a060fb9f-1f1a-4862-9a69-16dd49199e18" width="10.468" height="7.163" x="399.941" y="207.768" className="fill" data-name="Rectangle 71"/>
+       <rect id="b6754d5f-104f-449c-b9a9-cf9ac82bf5fe" width="10.468" height="7.163" x="582.312" y="207.768" className="fill" data-name="Rectangle 73"/>
+       <rect id="e6ed1ccd-2cfd-450f-a339-07df3a1ee6bb" width="71.075" height="7.163" x="500.768" y="207.768" className="fill" data-name="Rectangle 74"/>
        </g>
        </svg> 
     )   

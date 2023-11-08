@@ -3,11 +3,17 @@
 @import "../../assests/sass/animation"
 @import "../../assests/sass/color"
 
-.education
+.education 
     margin-bottom: 74px 
     align-items: center
+    @media (max-width: 992px) 
+        margin-top: 82px 
     .education-img
         @include animationDirection("education-img", 1s , "left" ,-230px , 0px)  
+        @media (max-width: 992px) 
+            height: max-content
+            width: 85%
+            margin: auto
     .education-box
         @include animationDirection("education-box", 1s , "right" ,-230px , 0px)  
         margin-top: -20px

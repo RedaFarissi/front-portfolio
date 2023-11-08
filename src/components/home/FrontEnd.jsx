@@ -3,9 +3,9 @@ import SvgFrontEnd from "./svg/SvgFrontEnd";
 
 export default function FrontEnd(){
     return(
-        <div  className="full-stack row">
+        <div  className="full-stack front-end row">
             <SvgFrontEnd />
-            <div className="full-stack-box col-md-6">
+            <div className="full-stack-box full-stack-box-front-end col-md-6">
                 <h6>Front-end web development</h6>
                 <div className="full-stack-icon-box">
                     <img src={images.html5} alt="html5" />

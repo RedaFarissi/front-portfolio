@@ -6,25 +6,34 @@
 
 
 .contact
-    @include animationDirection("contact", 2s , "bottom" , -30px , 0px)
+    @include animationDirection("contact", 2s , "bottom" , -40px , 0px)
+    margin-top: 105px 
     .contact-img
-        width: 80%
+        width: 80%  
+        height: max-content
+        margin: auto
         @extend %flex-center-center
         img
-            //margin-top: -15%
-            width: 90%
-            height: 90%
+            width: 100% 
+        
     .contact-box    
         align-self: center
         h1
             @extend %grandTitle
         p
-            font-size: 28px
             @extend %paragraphStyle
+            font-size: 28px
             margin-bottom: 20px 
+            @media (max-width: 767px) 
+                font-size: 19px
+                line-height: 36px
         .linkt-to-contact
             ul
                 display: flex
+                padding: 0px
+                @media (max-width: 767px) 
+                    justify-content: center
+                    margin-bottom: 40px 
                 li
                     list-style-type: none
                     a
@@ -35,11 +44,9 @@
                         margin-right: 9px
                         border-radius: 50%
                         border: 0.9px solid $bodyColor
-                       
                         span
                             display: block
                             i
-                                padding: 0
                                 font-size:22px
                                 color: $bodyBgColor
                     .btn-github
@@ -51,22 +58,31 @@
                     .btn-gmail
                         background-color: $bg-gmail
 .adress
-    margin-top: -60px
+    margin-top: 0px
     .adress-box
         @include animationDirection("adress-box", 2s , "left" , -230px , 0px)
-        text-align: center
-        align-self: center
+        
         h3
-            @extend %miniTitle
+            @extend %grandTitle
         p
-            font-size: 28px
             @extend %paragraphStyle
+            font-size: 28px
+            @media (max-width: 767px) 
+                font-size: 19px
+                line-height: 36px
         a 
             font-size: 20px
             color: $bodyBgColor
+            text-align: center
             &:hover
                 color: $bodyColor
                 border: 0.8px solid $bodyColor
                 background-color: $bodyBgColor
+            @media (max-width: 767px) 
+                margin-bottom: 40px 
     svg 
         @include animationDirection("adress-svg", 2s , "right" , -230px , 0px)
+        @media (max-width: 767px) 
+            width: 85%
+            height: max-content
+            margin-bottom: 40px 
