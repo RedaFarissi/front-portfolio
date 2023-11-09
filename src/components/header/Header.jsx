@@ -21,14 +21,19 @@ export default function Header(props){
     }
 
     useEffect(()=>{
+      //handle when resize
       HandleDisplaThemesButton()
       window.addEventListener("resize", HandleDisplaThemesButton)
+
+      // animation from top to bottom when observe
+      props.observerAnimation("animation-to-bottom-2s" , document.querySelectorAll(".animation-direction-to-bottom-2s") )
+
     },[])
   
     
     return (
     <header  style={(props.splash)?{display:"none"}:{display:"block", ...heightHeader}} onClick={props.asideHidden} className='header'>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="navbar navbar-expand-lg animation-direction-to-bottom-2s">
         <div className="container-fluid">
           <h1><Link to='/'>Reda Eskouni</Link></h1>
           <button className="btn navbar-toggler" onClick={hiddenBoxLink} type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" >

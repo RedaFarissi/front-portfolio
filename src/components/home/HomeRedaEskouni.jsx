@@ -4,10 +4,10 @@ export default function HomeRedaEskouni(){
     return(
         <div className="eskouni row" >
             <div className="eskouni-box col-md-6">
-                <h1 className="full-name"> Reda Eskouni </h1>
-                <h6>(Full Stack developer)</h6>
-                <p>A passionate individual who always strives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
-                <div className="social-media-div">
+                <h1 className="full-name animation-direction-to-right-1s"> Reda Eskouni </h1>
+                <h6 className="animation-direction-to-right-2s">(Full Stack developer)</h6>
+                <p className="animation-direction-to-right-3s">A passionate individual who always strives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
+                <div className="social-media-div animation-direction-to-right-4s">
                     <a className="btn-github" href="https://github.com/RedaFarissi/"> 
                         <span><i className="fab fa-github text-light"></i></span>
                     </a>
@@ -21,7 +21,7 @@ export default function HomeRedaEskouni(){
                         <span><i className="fab fa-google text-light"></i></span>
                     </a>
                 </div>
-                <a href="https://github.com/RedaFarissi" target="_blanck" className="btn"> <i class="fa-solid fa-star"></i> Star Me On Github </a>
+                <a href="https://github.com/RedaFarissi" target="_blanck" className="btn  animation-direction-to-right-5s"> <i class="fa-solid fa-star"></i> Star Me On Github </a>
             </div>
             <SvgEskouni />
         </div>

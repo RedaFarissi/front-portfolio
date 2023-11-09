@@ -1,2 +1,37 @@
+@import "../../assests/sass/animation"
+    
 .cursor-pointer
     cursor: pointer
+
+
+
+// top to bottom 
+.animation-to-bottom-1s
+  @include animationDirection("to-bottom-1", 1s , "top" ,-30px , 0px)
+.animation-to-bottom-2s
+  @include animationDirection("to-bottom-2", 1.5s , "top" ,-30px , 0px)
+
+
+// bottom to top
+.animation-to-top
+  @include animationDirection("to-top", 1s , "bottom" ,-30px , 0px)
+
+// left to right
+.animation-to-right-1s
+  @include animationDirection("to-right-1s", 1s , "left" ,-230px , 0px)
+.animation-to-right-2s
+  @include animationDirection("to-right-2s", 1.7s , "left" ,-230px , 0px)
+.animation-to-right-3s
+  @include animationDirection("to-right-3s", 2.2s , "left" ,-230px , 0px)
+.animation-to-right-4s
+  @include animationDirection("to-right-4s", 3s , "left" ,-230px , 0px)
+.animation-to-right-5s
+  @include animationDirection("to-right-5s", 3.4s , "left" ,-230px , 0px)
+
+// right to left
+.animation-to-left-1s
+  @include animationDirection("to-left-1s", 1s , "right" ,-230px , 0px)
+.animation-to-left-2s
+  @include animationDirection("to-left-2s", 1.7s , "right" ,-230px , 0px)
+.animation-to-left-3s
+  @include animationDirection("to-left-3s", 2.2s , "right" ,-230px , 0px)

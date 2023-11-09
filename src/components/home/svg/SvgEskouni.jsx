@@ -2,7 +2,7 @@ import "../Home.sass"
 
 export default function SvgEskouni(){
     return(   
-    <svg className="eskouni-img bg-fill col-md-6" xmlns="http://www.w3.org/2000/svg" id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd" width="711.188" height="669.683" data-name="Layer 1" viewBox="0 0 711.188 669.683">
+    <svg className="eskouni-img bg-fill col-md-6 animation-direction-to-top" xmlns="http://www.w3.org/2000/svg" id="b52d7e2d-d80f-4111-b6ed-d15502ee1edd" width="711.188" height="669.683" data-name="Layer 1" viewBox="0 0 711.188 669.683">
        <title>feeling_proud</title>
        <polygon fill="#e6e6e6" points="516.326 380.018 516.326 565.013 547.27 615.443 549.625 619.279 671.722 619.279 674.189 380.018 516.326 380.018"/>
        <polygon points="516.326 380.018 516.326 565.013 547.27 615.443 549.169 380.018 516.326 380.018" opacity=".1"/>

@@ -2,12 +2,12 @@
 @import "../../assests/sass/flex"
 @import "../../assests/sass/animation"
 @import "../../assests/sass/color"
+@import "../../assests/sass/class"
 
 .header
     display: block
 .projects-intro
     align-items: center   
-    @include animationDirection("projects-svg", 1s , "bottom" ,-30px , 0px)
     @media (max-width: 992px) 
         height: max-content
         margin-top: 103px 
@@ -53,10 +53,6 @@
             height: 160px
             @media (max-width: 992px) 
                 height: max-content
-        .cart_animation_1 ,  .cart_animation_2 , .cart_animation_3 
-            @include animationDirection("card-body5", 1s , "top", -50px , 0px)
-        .cart_animation_4 ,  .cart_animation_5 , .cart_animation_6 
-            @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
         .card-footer
             height: 90px
             font-size: 15px
@@ -74,7 +70,6 @@
     font-size: 20px
     padding: 7px 35px
     color: $bodyBgColor
-    @include animationDirection("card-body6", 1s , "bottom", -50px , 0px)
     &:hover
         background-color: $bodyBgColor
         color: $bodyColor 

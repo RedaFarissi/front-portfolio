@@ -24,7 +24,7 @@ class App extends Component {
   asideHidden =()=>{
     this.setState({asideDisplay:{visibility: "hidden"}})
   }
-
+  // On click in aside themes 
   changeColor = (bgColor,color,opacityColor)=>{
     document.documentElement.style.setProperty('--bg-color', bgColor);
     document.documentElement.style.setProperty('--text-color', color);
@@ -33,7 +33,7 @@ class App extends Component {
     localStorage.setItem("color" , color);
     localStorage.setItem("opacityColor" , opacityColor); 
   }
-
+  // Handle splach and visibility of header and footer
   removeSplash=()=>{ this.setState({ splash: false  }); }
   addSplash=()=>{  this.setState({ splash: true  });  }
 
@@ -43,17 +43,57 @@ class App extends Component {
     }  
   }
 
+  observerAnimation( classToAdd , allElementWithClass){
+    const observer = new IntersectionObserver((entries)=>{
+        entries.forEach((entrie)=>{
+            console.log(entrie)
+            if(entrie.isIntersecting){
+                entrie.target.classList.add(classToAdd)
+            }
+        })
+    })
+    allElementWithClass.forEach((e)=> observer.observe(e))
+  }
+
   render(){
     return(
       <Router>
-            <Header asideVisible={this.asideVisible} asideHidden={this.asideHidden} splash={this.state.splash}/>
-            <Aside  asideDisplay={this.state.asideDisplay}  changeColor={this.changeColor} />   
+            <Header 
+                asideVisible={this.asideVisible} 
+                asideHidden={this.asideHidden} 
+                splash={this.state.splash}
+                observerAnimation={this.observerAnimation}
+            />
+            <Aside  
+                asideDisplay={this.state.asideDisplay}  
+                changeColor={this.changeColor} 
+            />   
             <Routes>
                 <Route path='/' element={<Splash addSplash={this.addSplash} />} /> 
-                <Route path='/home' element={<Home asideHidden={this.asideHidden} removeSplash={this.removeSplash} />} /> 
-                <Route path='/education' element={<Education asideHidden={this.asideHidden} removeSplash={this.removeSplash}  />} /> 
-                <Route path='/projects' element={<Project asideHidden={this.asideHidden} removeSplash={this.removeSplash} />} /> 
-                <Route path='/contact-me' element={<ContactMe asideHidden={this.asideHidden} removeSplash={this.removeSplash} />} /> 
+                <Route path='/home' element={<Home 
+                      asideHidden={this.asideHidden}  
+                      removeSplash={this.removeSplash}
+                      observerAnimation={this.observerAnimation} 
+                    />}
+                /> 
+                <Route path='/education' element={<Education 
+                      asideHidden={this.asideHidden} 
+                      removeSplash={this.removeSplash} 
+                      observerAnimation={this.observerAnimation} 
+                    />} 
+                /> 
+                <Route path='/projects' element={<Project 
+                      asideHidden={this.asideHidden} 
+                      removeSplash={this.removeSplash} 
+                      observerAnimation={this.observerAnimation}
+                    />}
+                /> 
+                <Route path='/contact-me' element={<ContactMe 
+                      asideHidden={this.asideHidden} 
+                      removeSplash={this.removeSplash}
+                      observerAnimation={this.observerAnimation}
+                    />}
+                /> 
             </Routes> 
             <Footer splash={this.state.splash} />   
       </Router> 

@@ -6,6 +6,7 @@ import { useEffect } from "react";
 export default function Project(props){
     useEffect(()=>{
         props.removeSplash()
+        props.observerAnimation("animation-to-top" , document.querySelectorAll(".animation-direction-to-top"))
     },[])
     const github_project = [
         {id:"1",  title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects.",link:"https://github.com/RedaFarissi/portfolio" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
@@ -16,7 +17,7 @@ export default function Project(props){
         {id:"6",  title:"Parchessi Game" ,  paragraph:"Developed responsive game with React.js, featuring intricate and interactive gameplay mechanics. Proficient in handling diverse in-game conditions.",link:"https://github.com/RedaFarissi/parchessi-algo" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react,images.docker] , created:"2021"},
     ]
     var projects = github_project.map(e=>(
-        <div className="col-lg-4 p-2 mb-3">
+        <div className="col-lg-4 p-2 mb-3 animation-direction-to-top">
             <a href={e.link} target="_blanck" className="link p-2">
                 <div className="card card-project m-0">
                     <div className="card-header color-to-bg">
@@ -26,7 +27,7 @@ export default function Project(props){
                         <p className={`card-text cart_animation_${e.id}`}>{e.paragraph}</p>
                     </div>
                     <div className={`card-footer color-to-bg border-0`}>
-                        <div className={`cart_animation_${e.id}`}>
+                        <div>
                             <span>Created on {e.created}</span>
                             <div className="techno-used">
                                 {e.languageLogoUsed.map(img=>(
@@ -44,7 +45,7 @@ export default function Project(props){
 
     <main onClick={props.asideHidden} className="container-fliud">
         <div className="container">
-            <div className="projects-intro row">
+            <div className="projects-intro row animation-direction-to-top">
                 <SvgProject />
                 <div className="projects-box col-md-6 pt-5">
                     <h1 className="text-center">Projects</h1>
@@ -59,7 +60,7 @@ export default function Project(props){
             {projects}
             
         </div>
-        <div className="d-flex justify-content-center align-items-center rounded">
+        <div className="d-flex justify-content-center align-items-center animation-direction-to-top rounded">
             <a className="btn more-project text-center" href="https://github.com/RedaFarissi/">More Project</a>
         </div>
     </main>

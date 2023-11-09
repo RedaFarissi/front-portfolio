@@ -1,7 +1,7 @@
 import "../Home.sass"
 export default function SvgCloud(){
     return(    
-    <svg className="full-stack-img cloud-svg col-md-6" xmlns="http://www.w3.org/2000/svg" id="1dff4cb4-53bd-4ffc-acc1-5e8a2ceb72de" width="864.81" height="658.45" data-name="Layer 1" viewBox="0 0 864.81 658.45">
+    <svg className="full-stack-img cloud-svg col-md-6 animation-direction-to-right-3s" xmlns="http://www.w3.org/2000/svg" id="1dff4cb4-53bd-4ffc-acc1-5e8a2ceb72de" width="864.81" height="658.45" data-name="Layer 1" viewBox="0 0 864.81 658.45">
         <defs>
             <linearGradient id="e6219774-622b-406f-ae45-f26a74b1f5cd" x1="477.09" x2="477.09" y1="779.22" y2="120.78" gradientUnits="userSpaceOnUse">
                 <stop offset="0" stop-color="gray" stop-opacity=".25"/>

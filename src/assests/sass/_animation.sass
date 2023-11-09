@@ -44,3 +44,10 @@
   top: calc( 50% - #{$position})
   width: $len
   height: $len
+
+
+@mixin scroll-animation($element-id) 
+  @scroll-timeline( $element-id ) 
+    0% 
+      #{$element-id}
+        class: bg-dange

@@ -14,12 +14,19 @@ export default function ContactMe(props){
             }
         }
         cadreImageHeight()
+
+
+        // animation handle code on observe 
+        props.observerAnimation("animation-to-top" , document.querySelectorAll(".animation-direction-to-top") )    
+        props.observerAnimation("animation-to-right-1s" , document.querySelectorAll(".animation-direction-to-right-1s") )
+        props.observerAnimation("animation-to-right-2s" , document.querySelectorAll(".animation-direction-to-right-2s") )
+        props.observerAnimation("animation-to-left-1s" , document.querySelectorAll(".animation-direction-to-left-1s") )
     }, []);
 
     return(
         
     <main onClick={props.asideHidden} po className="container main">
-        <div className="contact row">
+        <div className="contact animation-direction-to-top row">
             
             <div className="col-md-6">
                 <div ref={cadreImageRef} className="contact-img">
@@ -59,8 +66,8 @@ export default function ContactMe(props){
 
         <div className="adress row">
             <div className="adress-box  col-md-6">
-                <h3>Address</h3>
-                <a className="btn color-to-bg" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
+                <h3 className="animation-direction-to-right-1s">Address</h3>
+                <a className="btn color-to-bg animation-direction-to-right-2s" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
             </div>
             <SvgMail />
         </div>

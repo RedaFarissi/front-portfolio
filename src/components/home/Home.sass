@@ -2,20 +2,22 @@
 @import "../../assests/sass/flex"
 @import "../../assests/sass/animation"
 @import "../../assests/sass/color"
+@import "../../assests/sass/class"
 
 
 #home
     padding: 12px 45px
+    overflow-x: hidden 
     @media (max-width: 1200px) 
         padding: 0px 25px
     @media (max-width: 450px) 
         padding: 0px 12px
+
 .eskouni
     margin-top: 60px
     padding: 0 20px
     @media (max-width: 767px) 
         padding: 0px
-
     .eskouni-box
         margin-top: 20px
         margin-bottom: 29px
@@ -27,12 +29,10 @@
         .full-name
             @extend %grandTitle
             font-weight: 650
-            @include animationDirection("full-name", 0.7s , "left" ,-230px , 0px)
         h6
             padding: 17px 0
             font-size: 33px 
             @extend %paragraphStyle
-            @include animationDirection("mini-title", 1.2s , "left" ,-230px , 0px)
             @media (max-width: 1200px) 
                 font-size: 26.4px
             @media (max-width: 767px) 
@@ -40,7 +40,6 @@
         p
             font-size: 30px
             @extend %paragraphStyle
-            @include animationDirection("p-animation", 2.2s , "left" ,-230px , 0px)
             @media (max-width: 1200px) 
                 line-height: 30px
                 font-size: 24px
@@ -49,7 +48,6 @@
                 font-size: 16px
         .social-media-div
             padding: 23px 0
-            @include animationDirection("social-media-div", 2.2s , "left" ,-230px , 0px)
             a
                 display: inline-flex 
                 @extend %center-center 
@@ -81,14 +79,12 @@
             letter-spacing: 1px
             background-color: $bodyColor
             color: $bodyBgColor
-            @include animationDirection("btn-github", 3s , "left" ,-230px , 0px)
             @media (max-width: 993px) 
                 font-size: 16px
             &:hover
                 background-color: $bodyBgColor
                 color: $bodyColor
-                border: 0.9px solid $bodyColor 
-            
+                border: 0.9px solid $bodyColor   
     .eskouni-img
         align-self: start
         padding-left: 50px
@@ -98,14 +94,11 @@
             margin: auto
             margin-top: 30px
             height: max-content 
-        @include animationDirection("eskouni-img", 1s , "bottom" ,-30px , 0px)
-
 
 .what-i-do
     @extend %grandTitle
     font-weight: 649
     margin-bottom: 100px
-    @include animationDirection("what-i-do", 1s , "bottom" ,-20px , 0px)
     @media (max-width: 767px) 
         margin-bottom: 20px
 
@@ -131,16 +124,13 @@
             margin: auto
             height: max-content
     .front-end-svg
-        @include animationDirection("front-end-svg", 1s , "left" ,-230px , 0px)
         @media (max-width: 767px) 
            margin-top: 35px 
            height: max-content 
     .back-end-svg
-        @include animationDirection("back-end-svg", 2s , "left" ,-230px , 0px)
         @media (max-width: 767px) 
            margin-top: 35px 
     .cloud-svg
-        @include animationDirection("cloud-svg", 3s , "left" ,-230px , 0px)
         @media (max-width: 767px) 
            margin-top: 35px 
            height: max-content 
@@ -164,11 +154,9 @@
             
         h6
             @extend %miniTitle
-            @include animationDirection("font-end-box-h6", 1s , "right" ,-230px , 0px)
             @media (max-width: 767px) 
                 margin-left: 20px 
         .full-stack-icon-box
-            @include animationDirection("full-stack-icon-box", 1.7s , "right" ,-230px , 0px)
             display: flex   
             flex-wrap: wrap 
             @media (max-width: 767px) 
@@ -192,7 +180,6 @@
                 @media (max-width: 1200px) 
                     width: 31px
         ul
-            @include animationDirection("ul-animation", 2.4s , "right" ,-230px , 0px)
             li
                 list-style-type: none
                 color: $bodyColor-opacity-5
