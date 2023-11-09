@@ -4,29 +4,46 @@
 @import "../../assests/sass/color"
 @import "../../assests/sass/animation"
 
-.adress
-    padding-top: 40px
-    .adress-box
-        height: max-content
-        align-self: flex-end
-        padding-left: calc( 9% - 0.9rem )
+.contact-map
+    width: 75%
+    margin: auto
+    @media (max-width: 999px)
+        width: 100%
+        padding: 55px
+    @media (max-width: 450px)
+        padding: 9px
+    .adress
+        padding-top: 40px
         @media (max-width: 767px) 
-            padding-left: 0
-            text-align: center
-        a 
-            padding: 7px 23px
-            font-size: 22px
-            color: $bodyBgColor
-            &:hover
-                color: $bodyColor
-                border: 0.8px solid $bodyColor
-                background-color: $bodyBgColor
-    svg 
-        @media (max-width: 767px) 
-            width: 85%
-            margin: auto
+            padding-top: 0px
+        .adress-box
             height: max-content
-            margin-bottom: 40px
+            align-self: flex-end
+            //padding-left: calc( 15% - 0.8rem )
+            @media (max-width: 767px) 
+                padding-left: 0
+                text-align: center
+                align-self: center
+            a 
+                padding: 7px 23px
+                font-size: 22px
+                color: $bodyBgColor
+                &:hover
+                    color: $bodyColor
+                    border: 0.8px solid $bodyColor
+                    background-color: $bodyBgColor
+                @media (max-width: 767px)
+                    margin-bottom: 20px 
+                @media (max-width: 450px)
+                    font-size: 20px
+                    padding: 5px 9px
+
+        svg 
+            @media (max-width: 767px) 
+                width: 85%
+                margin: auto
+                height: max-content
+                margin-bottom: 40px
 
 
 
@@ -71,6 +88,9 @@
             color: $bodyColor
             &:focus
                 border:2px solid $bodyColor-opacity-5
+            &::placeholder
+                color: $bodyColor-opacity-5
+                
         input
             width: 40%
             @media (max-width: 999px)
