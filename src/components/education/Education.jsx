@@ -12,7 +12,7 @@ export default function Education(props){
 <main onClick={props.asideHidden} className="container">
     <div className="education row">
         <SvgEducation />
-        <div className="education-box col-md-6 pt-5">
+        <div className="education-box col-md-6">
             <h1 className="text-center">Education</h1>
             <p className="text-center"> Uninterrupted self-learning  </p> 
             <div className="text-center">
@@ -26,14 +26,17 @@ export default function Education(props){
     <h1 className="Degrees-title text-center">Degrees Received</h1>
     
     <div className="degrees-received row">
-        <div className="degrees-received-box-img col-md-3 mt-5">
-            <img  src={images.miage_logo} className="miage_logo" alt="miage_logo" />
+        <div className="degrees-received-box-img col-lg-3">
+            <img  src={images.miage_logo} className="miage_logo" alt="miage logo" />
         </div>
-        <div className="col-md-9 mt-5 p-0">
+        <div className="col-lg-9 mt-4 p-1">
             <div className="card card-miage">
-                <div className="card-header">
-                    <h4>Header</h4>
-                    <p>paragragh</p>
+                <div className="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4>Header</h4>
+                        <p>paragragh</p>
+                    </div>
+                    <img  src={images.miage_logo} className="logo_inside_card" alt="miage logo" />
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">Success card title</h5>
@@ -46,15 +49,18 @@ export default function Education(props){
         </div> 
         
 
-        <div className="degrees-received-box-img col-md-3 mt-5">
-            <img  src={images.ensa} className="ensa_logo" alt="ensa"/>
+        <div className="degrees-received-box-img col-lg-3 ">
+            <img  src={images.ensa} className="ensa_logo" alt="ensa logo"/>
         </div>
         
-        <div className="col-md-9 mt-5 p-0">
+        <div className="col-lg-9 mt-4 p-1">
             <div className="card card-ensa">
-                <div className="card-header">
-                    <h3>Header</h3>
-                    <p>paragragh</p>
+                <div className="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h3>Header</h3>
+                        <p>paragragh</p>
+                    </div>
+                    <img  src={images.ensa} className="logo_inside_card ensa-chnage-width" alt="ensa logo" />
                 </div>
                 <div className="card-body">
                   <h5 className="card-title">Success card title</h5>

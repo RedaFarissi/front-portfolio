@@ -18,7 +18,9 @@
             height: max-content
             
     .projects-box
-        margin-top: -120px
+        align-self: center
+        margin-top: -80px
+        height: max-content
         h1
             @extend %grandTitle
         p
@@ -30,7 +32,10 @@
             
 .projects
     font-family: Google Sans Regular
-    margin-bottom: 30px 
+    margin-top: -70px
+    margin-bottom: 30px
+    @media (max-width: 992px) 
+        margin-top: 0px  
     .link
         display: block
         text-decoration-line: none
@@ -46,6 +51,8 @@
             font-size: 17px
             @extend %flex-center-center
             height: 160px
+            @media (max-width: 992px) 
+                height: max-content
         .cart_animation_1 ,  .cart_animation_2 , .cart_animation_3 
             @include animationDirection("card-body5", 1s , "top", -50px , 0px)
         .cart_animation_4 ,  .cart_animation_5 , .cart_animation_6 
@@ -62,7 +69,7 @@
                     margin: 2px
 
 .more-project
-    margin-bottom: 120px 
+    margin-bottom: 65px 
     background-color: $bodyColor
     font-size: 20px
     padding: 7px 35px

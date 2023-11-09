@@ -19,12 +19,9 @@ export default function Splash(props){
 <div className="conatiner conatiner-splash">
    
     <div className="splash">
-            
-            
         <div className="container-test-2">
-            <h1 className="splash-h1">Reda Eskouni</h1>
+            <h1 className="splash-h1">&lt; Reda Eskouni /&gt;</h1>
             <div className="riting riting-1"></div>
-            <div className="riting riting-2"></div>
         </div>
     </div> 
     

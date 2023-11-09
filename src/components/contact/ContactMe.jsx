@@ -18,12 +18,12 @@ export default function ContactMe(props){
 
     return(
         
-    <main onClick={props.asideHidden} className="container main">
+    <main onClick={props.asideHidden} po className="container main">
         <div className="contact row">
             
             <div className="col-md-6">
                 <div ref={cadreImageRef} className="contact-img">
-                   <img src={images.reda} alt="reda profile"  />
+                   <img src={images.reda} alt="reda profile" className="h-100" />
                 </div>
             </div>
             <div className="contact-box col-md-6">
@@ -58,9 +58,8 @@ export default function ContactMe(props){
 
 
         <div className="adress row">
-            <div className="adress-box  col-md-6 pt-5">
+            <div className="adress-box  col-md-6">
                 <h3>Address</h3>
-                <p> Hay Malek Al Ghazi Sidi Slimane </p>
                 <a className="btn color-to-bg" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
             </div>
             <SvgMail />

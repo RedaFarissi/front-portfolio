@@ -20,7 +20,7 @@ export default function BackEnd(){
             <ul>
                 <li>
                     <i class="fa-solid fa-bolt text-warning"></i>
-                    Backend developer experienced with Laravel/Django for server-side development
+                    Backend developer experienced with Laravel and Django for server-side development
                 </li>
                 <li>
                     <i class="fa-solid fa-bolt text-warning"></i> 

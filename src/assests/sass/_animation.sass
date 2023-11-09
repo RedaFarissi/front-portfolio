@@ -17,3 +17,30 @@
       transform: rotate(360deg)
     100%
       transform: rotate(0deg)
+
+@mixin reting-1-animation($left) 
+  @keyframes reting-1
+    0% 
+      left: calc(0% - #{$left})
+      border-top: 10px solid $bodyColor
+      transform:  rotateX(45deg) rotateY(-80deg) rotateZ(0deg)
+    100% 
+      left: calc(220% - #{$left})
+      border-top: 10px solid $bodyColor
+      transform: rotateX(45deg) rotateY(-80deg) rotateZ(20000deg) 
+
+@mixin full-name-splash-animation($fontSize)
+  @keyframes full-name-splash
+    0% 
+      font-size: $fontSize
+      color: $bodyBgColor
+      visibility: hidden
+    100% 
+      font-size: $fontSize
+      color: $bodyColor
+      visibility: visible
+
+@mixin width-and-height-equal($len,$position)
+  top: calc( 50% - #{$position})
+  width: $len
+  height: $len

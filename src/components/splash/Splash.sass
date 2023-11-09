@@ -9,9 +9,7 @@
     overflow: hidden
     background-color: white
     @extend %flex-center-center
-   
-    
-    
+  
 .splash
     @extend %flex-center-center
     width: 0px
@@ -29,18 +27,21 @@
       font-family: 'Amiri', serif
       font-family: 'Cedarville Cursive', cursive
       font-family: 'Dancing Script', cursive
-      font-size: 0px
+      font-size: 200px
+      visibility: hidden
       color: $bodyBgColor
       animation: full-name-splash 1s linear forwards
       animation-delay: 1s
-      @keyframes full-name-splash
-        0% 
-            font-size: 200px
-            color: $bodyBgColor
-        100% 
-            font-size: 200px
-            color: $bodyColor
-      &:before            
+      @include full-name-splash-animation(200px)
+      @media (max-width: 1300px)
+        @include full-name-splash-animation(130px)
+      @media (max-width: 900px)
+        @include full-name-splash-animation(99px)
+      @media (max-width: 700px)
+        @include full-name-splash-animation(70px)
+      @media (max-width: 470px)
+        @include full-name-splash-animation(40px)
+      &:before
         content: ''            
         position: absolute            
         left: -20%      
@@ -49,48 +50,36 @@
         animation: animate-heading 5s linear forwards   
         animation-delay: 1s       
         @keyframes animate-heading                
-            0%                    
-                background: linear-gradient(90deg, transparent 0%, $bodyBgColor 5%, $bodyBgColor 100%)
-                left: 0%                
-            100%                     
-                left:220%
+          0%                    
+            background: linear-gradient(90deg, transparent 0%, $bodyBgColor 5%, $bodyBgColor 100%)
+            left: 0%                
+          100%                     
+            left:220%
+
+
+              
+
     .riting
-      content: ''            
-      width: 290px
-      height: 290px
-      border-radius: 50%
-      position: absolute  
+      content: '' 
+      position: absolute   
       left: 0%  
-      top: calc( 50% - 140px )
+      @include width-and-height-equal(333px, 166px)
+      border-radius: 50%
       z-index: 999
       border-top: 0px
+      @media (max-width: 1300px)
+        @include width-and-height-equal(300px, 150px)
+      @media (max-width: 1300px)
+        @include width-and-height-equal(280px, 140px)
+      
     .riting-1           
       animation: reting-1 5s linear    
-      animation-delay: 1s       
-      @keyframes reting-1        
-        0%
-          border-top: 10px solid $bodyColor            
-          transform: rotateX(45deg) rotateY(-80deg) rotateZ(0deg)    
-        100%
-          left:220% 
-          border-top: 10px solid $bodyColor            
-          transform: rotateX(45deg) rotateY(-80deg) rotateZ(360deg) 
-    .riting-2 
-      animation: reting-2 5s linear    
-      animation-delay: 1s       
-      @keyframes reting-2        
-        0%
-          border-top: 10px solid $bodyColor
-          transform: rotateX(-45deg) rotateY(-85deg) rotateZ(0deg)
-        100%
-          left:220%
-          border-top: 10px solid $bodyColor
-          transform: rotateX(-45deg) rotateY(-85deg) rotateZ(360deg)
-     
-
-// .container-test    
-//     @extend %flex-center-center    
-//     background-color: black    
-//     width: 100%    
-//     height: 700px    
-    
+      animation-delay: 1s         
+      @include reting-1-animation(23px) 
+      @media (max-width: 1300px)
+        @include  reting-1-animation(70px) 
+      @media (max-width: 900px)
+        @include  reting-1-animation(90px) 
+      @media (max-width: 470px)
+        @include  reting-1-animation(110px) 
+         

@@ -15,11 +15,14 @@ class App extends Component {
     }
   }
   asideVisible =(event)=>{
-    this.setState( prevState => ({...prevState , asideDisplay:{visibility: "visible"} }) )
+    (this.state.asideDisplay.visibility === "hidden")?
+    this.setState({ asideDisplay: {visibility: "visible"} }):
+    this.setState({ asideDisplay: {visibility: "hidden"} });
+
     event.stopPropagation();
   }
   asideHidden =()=>{
-    this.setState( prevState => ({...prevState , asideDisplay:{visibility: "hidden"} }) )
+    this.setState({asideDisplay:{visibility: "hidden"}})
   }
 
   changeColor = (bgColor,color,opacityColor)=>{
