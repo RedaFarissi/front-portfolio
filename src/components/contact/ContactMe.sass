@@ -4,51 +4,145 @@
 @import "../../assests/sass/color"
 @import "../../assests/sass/animation"
 
-
-.contact
-    margin-top: 80px      
-    .contact-img
-        width: 70%  
+.adress
+    padding-top: 40px
+    .adress-box
         height: max-content
-        margin: auto
-        @extend %flex-center-center
-        img
-            width: 100% 
-        
-    .contact-box    
-        align-self: center
-        @media (max-width: 992px) 
+        align-self: flex-end
+        padding-left: calc( 9% - 0.9rem )
+        @media (max-width: 767px) 
+            padding-left: 0
             text-align: center
+        a 
+            padding: 7px 23px
+            font-size: 22px
+            color: $bodyBgColor
+            &:hover
+                color: $bodyColor
+                border: 0.8px solid $bodyColor
+                background-color: $bodyBgColor
+    svg 
+        @media (max-width: 767px) 
+            width: 85%
+            margin: auto
+            height: max-content
+            margin-bottom: 40px
+
+
+
+.contact-main
+    padding-top: 40px
+    margin-top: 2rem
+    @media (max-width: 999px)
+        margin-bottom: -60px 
+    .contact-msg
+        padding: 55px
+        padding-bottom: 110px
+        width: 75%
+        border: 0.9rem solid $bodyColor
+        @media (max-width: 999px)
+            width:100%
+            border: none
+        @media (max-width: 450px)
+            padding: 9px
         h1
             @extend %grandTitle
-        p
+        #hr-bottom-contact
+            width: 144px
+            height: 5px
+            background-color: $bodyColor
+        .line
             @extend %paragraphStyle
-            font-size: 28px
+            font-size: 25px
             margin-bottom: 20px 
             @media (max-width: 767px) 
                 font-size: 17px
                 line-height: 30px
                 margin-bottom: 10px
-        .linkt-to-contact
+
+        input , textarea
+            height:49px 
+            border:0.9px solid $bodyColor-opacity-5
+            padding-left:9px
+            margin-top:0.9rem
+            border-radius:5px
+            outline: none
+            background-color: $bodyBgColor
+            color: $bodyColor
+            &:focus
+                border:2px solid $bodyColor-opacity-5
+        input
+            width: 40%
+            @media (max-width: 999px)
+                width: 100%
+        .textarea
+            width: 60%
+            height: 30vh
+            padding-top: 9px
+            resize: none
+            @media (max-width: 999px)
+                width: 100%
+        .button
+            position: absolute 
+            bottom: 2.5rem
+            right: calc(50% - 90px)
+            background-color: $bodyColor
+            color: $bodyBgColor
+            &:hover 
+                background-color: $bodyBgColor
+                border: 0.9px solid $bodyColor
+                color: $bodyColor
+            @media (max-width: 999px)
+                position: static
+                font-size:90%
+                width:100% 
+                margin-top:9px
+        .contact_box
+            position: absolute
+            right: -12%    
+            top: calc( 60% - 150px )
+            width: 360px
+            height: 300px
+            border-radius: 5px 
+            background-color: $bodyBgColor
+            border: 0.9rem solid $bodyColor-opacity-5
+            padding: 9px
+            color: $bodyColor
+            @media (max-width: 999px)
+                position: static 
+                border: none 
+                box-shadow: none
+                width: 100%
+                margin-top: 2rem
+                padding: 0px
+                height: max-content
+            #collection 
+                width: max-width
+                font-size: 40px
             ul
                 display: flex
+                justify-content: center
                 padding: 0px
                 @media (max-width: 992px) 
-                    justify-content: center
+                    justify-content: stretch
+                    padding-left: 9px 
                 li
                     list-style-type: none
                     a
-                        display: inline-flex 
                         @extend %center-center 
-                        width: 45px
-                        height: 45px
+                        display: inline-flex 
+                        width: 30px
+                        height: 30px
                         margin-right: 9px
                         border-radius: 50%
                         border: 0.9px solid $bodyColor
+                        @media (max-width: 999px)
+                            width: 45px
+                            height: 45px
                         span
                             display: block
                             i
-                                font-size:22px
+                                font-size:17px
                                 color: $bodyBgColor
                     .btn-github
                         background-color: $bg-github
@@ -58,28 +152,3 @@
                         background-color: $bg-facebook
                     .btn-gmail
                         background-color: $bg-gmail
-.adress
-    margin-bottom: 40px   
-    .adress-box
-        height: max-content
-        align-self: center
-        text-align: center
-        h3
-            @extend %grandTitle
-            padding: 0
-            margin-top: 30px
-            text-align: center
-        a 
-            margin: 30px 0
-            font-size: 20px
-            color: $bodyBgColor
-            &:hover
-                color: $bodyColor
-                border: 0.8px solid $bodyColor
-                background-color: $bodyBgColor
-           
-    svg 
-        @media (max-width: 767px) 
-            width: 85%
-            height: max-content
-            margin-bottom: 40px 

@@ -3,10 +3,13 @@ import {
   Header , Aside , Footer , Splash , Home , Education , Project , ContactMe 
 } from './components/path';
 import './App.sass';
-import React , {Component} from 'react';
+import React , { Component, createRef } from 'react';
 
 
 class App extends Component {
+  
+  asideRef = createRef();
+
   constructor(props){
     super(props)
     this.state = {
@@ -15,10 +18,14 @@ class App extends Component {
     }
   }
   asideVisible =(event)=>{
-    (this.state.asideDisplay.visibility === "hidden")?
-    this.setState({ asideDisplay: {visibility: "visible"} }):
-    this.setState({ asideDisplay: {visibility: "hidden"} });
+    if(this.state.asideDisplay.visibility === "hidden"){
+      
+      this.setState({ asideDisplay: {visibility: "visible"} })
+    }else{
 
+      this.setState({ asideDisplay: {visibility: "hidden"} });
+    }
+    
     event.stopPropagation();
   }
   asideHidden =()=>{
@@ -66,7 +73,7 @@ class App extends Component {
             />
             <Aside  
                 asideDisplay={this.state.asideDisplay}  
-                changeColor={this.changeColor} 
+                changeColor={this.changeColor} asideRef={this.asideRef}
             />   
             <Routes>
                 <Route path='/' element={<Splash addSplash={this.addSplash} />} /> 

@@ -23,54 +23,68 @@ export default function ContactMe(props){
         props.observerAnimation("animation-to-left-1s" , document.querySelectorAll(".animation-direction-to-left-1s") )
     }, []);
 
-    return(
+    return(  
+    <main onClick={props.asideHidden} className="contact-main">
+        <div className="container">
+
+            <div className="adress row">
+                <div className="adress-box col-md-6">
+                    <a className="btn color-to-bg animation-direction-to-right-1s" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
+                </div>
+                <SvgMail />
+            </div>
+        </div>
+        <div className="contact-msg  m-auto position-relative rounded mt-5 mb-5 pt-0" >
+            <h1>CONTACT ME</h1>
+            <hr id="hr-bottom-contact"/>
+            <p className="line">I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you to create modern site web</p>
+            <form  method="POST">
+                <input type='text' name='subject' className="subject rounded" placeholder='Title of the email (subject)' required /><br/>
+                <input type='email' name='email' className="rounded" placeholder='Your email' required/><br/>
+                <textarea name='message' className='textarea'> Your message </textarea>
+                <button type='submit' className='button btn px-5 py-2 fs-5'> Send </button>
+            </form>
+            <div className="contact_box">
+                <h5 id="collection" className='my-3 ms-3'>social</h5>
+                <div className='d-flex'>
+                    <i className="fa-regular fa-location-dot mt-1 mx-3"></i>
+                    <p>DR JDID, Rue 55 No 23 Sidi Slimane</p>
+                </div>
+
+                <div className='d-flex'>
+                    <i className="fa-solid fa-phone mt-1 mx-3"></i>
+                    <p> +212 6 06 70 56 46 </p>
+                </div>
+                <div className='d-flex'>
+                    <i className="fa-solid fa-envelope mt-1 mx-3"></i>
+                    <p> redaesskouni@gmail.com </p>
+                </div>
+                <ul>
+                    <li>
+                        <a className="btn-github" href="https://github.com/RedaFarissi/"> 
+                            <span><i className="fab fa-github text-light"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className="btn-linkedin" href="#"> 
+                            <span><i className="fa-brands fa-linkedin-in text-light"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className="btn-facebook" href="#"> 
+                            <span><i className="fa-brands fa-facebook-f text-light"></i></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a className="btn-gmail" href="#"> 
+                            <span><i className="fab fa-google text-light"></i></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         
-    <main onClick={props.asideHidden} po className="container main">
-        <div className="contact animation-direction-to-top row">
-            
-            <div className="col-md-6">
-                <div ref={cadreImageRef} className="contact-img">
-                   <img src={images.reda} alt="reda profile" className="h-100" />
-                </div>
-            </div>
-            <div className="contact-box col-md-6">
-                <h1>Contact Me</h1>
-                <p> I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you to create modern site web </p>
-                <div className="linkt-to-contact">
-                    <ul>
-                        <li>
-                            <a className="btn-github" href="https://github.com/RedaFarissi/"> 
-                                <span><i className="fab fa-github text-light"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="btn-linkedin" href="#"> 
-                                <span><i class="fa-brands fa-linkedin-in text-light"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="btn-facebook" href="#"> 
-                                <span><i class="fa-brands fa-facebook-f text-light"></i></span>
-                            </a>
-                        </li>
-                        <li>
-                            <a className="btn-gmail" href="#"> 
-                                <span><i className="fab fa-google text-light"></i></span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-
-        <div className="adress row">
-            <div className="adress-box  col-md-6">
-                <h3 className="animation-direction-to-right-1s">Address</h3>
-                <a className="btn color-to-bg animation-direction-to-right-2s" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
-            </div>
-            <SvgMail />
-        </div>
     </main>
     )
 }
