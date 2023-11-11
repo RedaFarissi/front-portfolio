@@ -13,6 +13,7 @@ class App extends Component {
   constructor(props){
     super(props)
     this.state = {
+      domain: "http://127.0.0.1:8000",
       splash: true,
       asideDisplay: {visibility: "hidden"} ,
     }
@@ -99,6 +100,7 @@ class App extends Component {
                       asideHidden={this.asideHidden} 
                       removeSplash={this.removeSplash}
                       observerAnimation={this.observerAnimation}
+                      domain={this.state.domain}
                     />}
                 /> 
             </Routes> 

@@ -2,18 +2,18 @@ import "./Splash.sass"
 import React, { useEffect  } from 'react';
 import { useNavigate } from "react-router-dom";
 
-export default function Splash(props){
+export default function Splash({ addSplash }){
 
     const navigate = useNavigate();
 
     useEffect(() => {
-        props.addSplash()
+        addSplash()
         const timeoutId = setTimeout(() => {
             navigate("/home");
         }, 4000);
 
         return ()=> clearTimeout(timeoutId);
-    }, [navigate]);
+    }, [navigate, addSplash]);
 
     return(
 <div className="conatiner conatiner-splash">

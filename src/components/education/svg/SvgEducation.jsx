@@ -5,9 +5,9 @@ export default function SvgEducation(){
 <svg className="education-img col-md-6 h-100 animation-direction-to-right-1s" xmlns="http://www.w3.org/2000/svg" id="eb113788-f1f1-4c1f-be62-f1d0ea2e1eb6" width="795.394" height="574.038" data-name="Layer 1" viewBox="0 0 795.394 574.038" >
 	<defs>
 		<linearGradient id="b2a81085-935f-40be-bb27-75940df8c338" x1="-450.79" x2="-450.79" y1="2803.047" y2="2729.348" gradientTransform="translate(3217.53309 1009.65784) rotate(90)" gradientUnits="userSpaceOnUse">
-			<stop offset="0" stop-color="gray" stop-opacity=".25"/>
-			<stop offset=".535" stop-color="gray" stop-opacity=".12"/>
-			<stop offset="1" stop-color="gray" stop-opacity=".1"/>
+			<stop offset="0" stopColor="gray" stopOpacity=".25"/>
+			<stop offset=".535" stopColor="gray" stopOpacity=".12"/>
+			<stop offset="1" stopColor="gray" stopOpacity=".1"/>
 		</linearGradient>
 	</defs>
 	<title>Graduation</title>

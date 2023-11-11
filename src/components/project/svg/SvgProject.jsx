@@ -23,35 +23,35 @@ export default function SvgProject(){
     <circle cx="278.76" cy="27.67" r="11.08" fill="#8ccf4d" opacity=".8"/>
     <rect width="70.01" height="33.22" x="457" y="170.7" className="fill"  rx="8.57"/>
     <rect width="70.01" height="33.22" x="598.84" y="170.7" className="fill"  rx="8.57"/>
-    <polyline fill="none" stroke="#3f3d56" stroke-miterlimit="10" points="491.81 203.17 561.89 294.68 634.08 202.74"/>
+    <polyline fill="none" stroke="#3f3d56" strokeMiterlimit="10" points="491.81 203.17 561.89 294.68 634.08 202.74"/>
     <rect width="107.03" height="50.79" x="508.37" y="291.75" opacity=".1" rx="8.57"/>
     <rect width="102.68" height="48.73" x="510.55" y="292.79" className="fill"  rx="8.57"/>
-    <line x1="492.29" x2="491.38" y1="170.7" y2="138.35" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <polyline fill="none" stroke="#3f3d56" stroke-miterlimit="10" points="675.22 139.93 634.08 170.7 590.81 139.93"/>
+    <line x1="492.29" x2="491.38" y1="170.7" y2="138.35" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <polyline fill="none" stroke="#3f3d56" strokeMiterlimit="10" points="675.22 139.93 634.08 170.7 590.81 139.93"/>
     <rect width="70.01" height="33.22" x="456.61" y="106.7" className="fill" rx="8.57"/>
     <rect width="70.01" height="33.22" x="640.21" y="106.7" className="fill" rx="8.57"/>
     <rect width="70.01" height="33.22" x="555.81" y="106.7" className="fill" rx="8.57"/>
-    <line x1="561.89" x2="561.62" y1="341.51" y2="430.01" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <path fill="none" stroke="#3f3d56" stroke-miterlimit="10" d="M609.53,558.59v0Z" transform="translate(-48.1 -96.1)"/>
-    <polyline fill="none" stroke="#3f3d56" stroke-miterlimit="10" points="462.42 493.11 561.42 462.48 660.82 492.89"/>
+    <line x1="561.89" x2="561.62" y1="341.51" y2="430.01" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <path fill="none" stroke="#3f3d56" strokeMiterlimit="10" d="M609.53,558.59v0Z" transform="translate(-48.1 -96.1)"/>
+    <polyline fill="none" stroke="#3f3d56" strokeMiterlimit="10" points="462.42 493.11 561.42 462.48 660.82 492.89"/>
     <rect width="70.01" height="33.22" x="526.62" y="430.01" className="fill" rx="8.57"/>
     <rect width="70.01" height="33.22" x="861.88" y="345.12" className="fill" rx="8.57" transform="translate(1210.51 -631.25) rotate(90)"/>
     <rect width="70.01" height="33.22" x="861.88" y="454.76" className="fill" rx="8.57" transform="translate(377.41 1272.15) rotate(-90)"/>
     <rect width="70.01" height="33.22" x="625.82" y="492.66" className="fill" rx="8.57"/>
     <rect width="70.01" height="33.22" x="475.52" y="588.76" className="fill" rx="8.57" transform="translate(972.95 1114.65) rotate(-180)"/>
     <rect width="70.01" height="33.22" x="576.46" y="588.76" className="fill" rx="8.57" transform="translate(1174.83 1114.65) rotate(-180)"/>
-    <line x1="801" x2="832.16" y1="320.45" y2="374.94" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="735.11" x2="767.82" y1="319.78" y2="319.78" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="613.23" x2="702.51" y1="317.15" y2="319.78" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="832.16" x2="801.15" y1="265.63" y2="320.21" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
+    <line x1="801" x2="832.16" y1="320.45" y2="374.94" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="735.11" x2="767.82" y1="319.78" y2="319.78" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="613.23" x2="702.51" y1="317.15" y2="319.78" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="832.16" x2="801.15" y1="265.63" y2="320.21" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
     <rect width="70.01" height="33.22" x="732.22" y="399.07" className="fill" rx="8.57" transform="translate(1134.8 -447.65) rotate(90)"/>
     <rect width="70.01" height="33.22" x="797.48" y="399.94" className="fill" rx="8.57" transform="translate(1200.94 -512.04) rotate(90)"/>
     <rect width="70.01" height="33.22" x="288.1" y="345.12" className="fill"  rx="8.57" transform="translate(636.73 -57.48) rotate(90)"/>
     <rect width="70.01" height="33.22" x="288.1" y="454.76" className="fill"  rx="8.57" transform="translate(-196.37 698.37) rotate(-90)"/>
-    <line x1="322.78" x2="291.61" y1="320.45" y2="374.94" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="388.66" x2="355.96" y1="319.78" y2="319.78" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="510.55" x2="421.27" y1="317.15" y2="319.78" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
-    <line x1="291.61" x2="322.62" y1="265.63" y2="320.21" fill="none" stroke="#3f3d56" stroke-miterlimit="10"/>
+    <line x1="322.78" x2="291.61" y1="320.45" y2="374.94" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="388.66" x2="355.96" y1="319.78" y2="319.78" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="510.55" x2="421.27" y1="317.15" y2="319.78" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
+    <line x1="291.61" x2="322.62" y1="265.63" y2="320.21" fill="none" stroke="#3f3d56" strokeMiterlimit="10"/>
     <rect width="70.01" height="33.22" x="417.76" y="399.07" className="fill"  rx="8.57" transform="translate(820.34 -133.18) rotate(90)"/>
     <rect width="70.01" height="33.22" x="352.49" y="399.94" className="fill"  rx="8.57" transform="translate(755.94 -67.05) rotate(90)"/>
     <path fill="#46455b" d="M156.12,598c0,50.24,31.52,90.9,70.47,90.9" transform="translate(-48.1 -96.1)"/>

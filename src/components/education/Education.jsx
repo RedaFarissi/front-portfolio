@@ -26,9 +26,8 @@ export default function Education(props){
             <h1 className="text-center animation-direction-to-left-1s">Education</h1>
             <p className="text-center animation-direction-to-left-2s"> Uninterrupted self-learning  </p> 
             <div className="text-center animation-direction-to-left-3s">
-                <a><img src={images.w3Schools_logo} alt="w3Schools logo"/></a>
-                <a> <SvgMozilla /></a>
-                <a><img src={images.books} alt="books logo"/></a>
+                <a href="https://www.w3schools.com/" target="_blanck"><img src={images.w3Schools_logo} alt="w3Schools logo"/></a>
+                <a href="https://developer.mozilla.org/en-US/docs/Glossary/Python" target="_blanck"> <SvgMozilla /></a>
             </div>
         </div>
     </div>

@@ -8,16 +8,16 @@ export default function HomeRedaEskouni(){
                 <h6 className="animation-direction-to-right-2s">(Full Stack developer)</h6>
                 <p className="animation-direction-to-right-3s">A passionate individual who always strives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.</p>
                 <div className="social-media-div animation-direction-to-right-4s">
-                    <a className="btn-github" href="https://github.com/RedaFarissi/"> 
+                    <a className="btn-github" href="https://github.com/RedaFarissi/" target="_blanck"> 
                         <span><i className="fab fa-github text-light"></i></span>
                     </a>
-                    <a className="btn-linkedin" href="#"> 
+                    <a className="btn-linkedin" href="https://www.linkedin.com/in/reda-eskouni-aa4361209/" target="_blanck"> 
                         <span><i class="fa-brands fa-linkedin-in text-light"></i></span>
                     </a>
-                    <a className="btn-facebook" href="#"> 
+                    <a className="btn-facebook" href="https://www.facebook.com/profile.php?id=100007840725728" target="_blanck"> 
                         <span><i class="fa-brands fa-facebook-f text-light"></i></span>
                     </a>
-                    <a className="btn-gmail" href="#"> 
+                    <a className="btn-gmail" href="#gmail"> 
                         <span><i className="fab fa-google text-light"></i></span>
                     </a>
                 </div>

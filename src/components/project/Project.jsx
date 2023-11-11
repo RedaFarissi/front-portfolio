@@ -3,11 +3,11 @@ import SvgProject from "./svg/SvgProject";
 import "./Project.sass"
 import { useEffect } from "react";
 
-export default function Project(props){
+export default function Project({removeSplash , asideHidden , observerAnimation}){
     useEffect(()=>{
-        props.removeSplash()
-        props.observerAnimation("animation-to-top" , document.querySelectorAll(".animation-direction-to-top"))
-    },[])
+        removeSplash()
+        observerAnimation("animation-to-top" , document.querySelectorAll(".animation-direction-to-top"))
+    },[removeSplash,observerAnimation])
     const github_project = [
         {id:"1",  title:"Portfolio" ,  paragraph:"The Complete Customizable Software Developer Portfolio Template which lets you showcase your projects.",link:"https://github.com/RedaFarissi/portfolio" , languageLogoUsed: [images.html5,images.css,images.sass,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
         {id:"2",  title:"Front-End Ecommerce" ,  paragraph:"Crafted a responsive e-commerce front-end with React, delivering an elegant user interface. Seamlessly integrates with a secure back-end featuring robust authentication for a comprehensive shopping experience.",link:"https://github.com/RedaFarissi/front-ecommerce" , languageLogoUsed: [images.html5,images.css,images.js,images.bootstrap,images.react,images.docker] , created:"2023"},
@@ -43,7 +43,7 @@ export default function Project(props){
 
     return (
 
-    <main onClick={props.asideHidden} className="container-fliud">
+    <main onClick={asideHidden} className="container-fliud">
         <div className="container">
             <div className="projects-intro row animation-direction-to-top">
                 <SvgProject />

@@ -1,4 +1,4 @@
-import { useState , useEffect , useRef } from 'react';
+import { useState , useEffect } from 'react';
 import './Header.sass'
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ export default function Header(props){
     const [ displayThemesButton, setDisplayThemesButton] = useState({display: "none"})
 
     const hiddenBoxLink =()=>{
-      if( heightHeader.height == "90px"){
+      if( heightHeader.height === "90px"){
         setHeightHeader({height: "220px"})
       }else{
         setHeightHeader({height: "90px"})
@@ -48,7 +48,7 @@ export default function Header(props){
               <li onClick={props.asideVisible} style={displayThemesButton} className="nav-item cursor-pointer"> <a>themes</a> </li>
             </ul>
           </div>
-          <div onClick={props.asideVisible} style={(displayThemesButton.display=="block")?{display:"none"}:{display:"block"}} className="gear"><i className=" fa-solid fa-gear"></i> </div>
+          <div onClick={props.asideVisible} style={(displayThemesButton.display==="block")?{display:"none"}:{display:"block"}} className="gear"><i className=" fa-solid fa-gear"></i> </div>
         </div>
       </nav>
     </header>
