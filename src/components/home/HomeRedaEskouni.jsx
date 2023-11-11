@@ -1,6 +1,6 @@
 import SvgEskouni from "./svg/SvgEskouni";
 import "./Home.sass"
-export default function HomeRedaEskouni(){
+export default function HomeRedaEskouni(props){
     return(
         <div className="eskouni row" >
             <div className="eskouni-box col-md-6">
@@ -17,9 +17,9 @@ export default function HomeRedaEskouni(){
                     <a className="btn-facebook" href="https://www.facebook.com/profile.php?id=100007840725728" target="_blanck"> 
                         <span><i class="fa-brands fa-facebook-f text-light"></i></span>
                     </a>
-                    <a className="btn-gmail" href="#gmail"> 
+                    <div className="btn-gmail" onClick={props.handleMailtoClick}> 
                         <span><i className="fab fa-google text-light"></i></span>
-                    </a>
+                    </div>
                 </div>
                 <a href="https://github.com/RedaFarissi" target="_blanck" className="btn  animation-direction-to-right-5s"> <i class="fa-solid fa-star"></i> Star Me On Github </a>
             </div>

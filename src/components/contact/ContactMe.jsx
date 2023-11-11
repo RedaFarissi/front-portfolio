@@ -60,16 +60,6 @@ export default function ContactMe(props){
    
         
     };
-    const handleEmailClick = () => {
-        const emailAddress = 'redaredaeskouni@example.com';
-        const subject = 'Subject of the email';
-        const body = 'Body of the email';
-    
-        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        
-        // Open the default email client
-        window.location.href = mailtoLink;
-      };
     
     return(  
     <main onClick={props.asideHidden} className="contact-main">
@@ -132,7 +122,7 @@ export default function ContactMe(props){
                         </a>
                     </li>
                     <li>
-                        <div className="btn-gmail" onClick={handleEmailClick}> 
+                        <div className="btn-gmail" onClick={props.handleMailtoClick}> 
                             <span><i className="fab fa-google text-light"></i></span>
                         </div>
                     </li>

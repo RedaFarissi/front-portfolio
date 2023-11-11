@@ -29,7 +29,7 @@ export default function Home(props){
     
     return(
     <main onClick={props.asideHidden} id='home'>
-        <HomeRedaEskouni />
+        <HomeRedaEskouni handleMailtoClick={props.handleMailtoClick} />
         <h1 className="what-i-do text-center animation-direction-to-top">What I Do?</h1>
         <FrontEnd />
         <BackEnd />

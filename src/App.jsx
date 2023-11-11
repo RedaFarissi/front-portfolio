@@ -63,6 +63,17 @@ class App extends Component {
     allElementWithClass.forEach((e)=> observer.observe(e))
   }
 
+  handleMailtoClick = () => {
+    const emailAddress = 'redaredaeskouni@example.com';
+    const subject = 'Subject of the email';
+    const body = 'Body of the email';
+
+    const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    
+    // Open the default email client
+    window.location.href = mailtoLink;
+  };
+
   render(){
     return(
       <Router>
@@ -82,6 +93,7 @@ class App extends Component {
                       asideHidden={this.asideHidden}  
                       removeSplash={this.removeSplash}
                       observerAnimation={this.observerAnimation} 
+                      handleMailtoClick={this.handleMailtoClick}
                     />}
                 /> 
                 <Route path='/education' element={<Education 
@@ -101,6 +113,7 @@ class App extends Component {
                       removeSplash={this.removeSplash}
                       observerAnimation={this.observerAnimation}
                       domain={this.state.domain}
+                      handleMailtoClick={this.handleMailtoClick}
                     />}
                 /> 
             </Routes> 
