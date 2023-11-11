@@ -4,7 +4,7 @@ import SvgBackEndIcon from "./svg/SvgBackEndIcon"
 export default function BackEnd(){
     return(
     <div className="full-stack row">
-        <SvgBackEndIcon/>
+        <SvgBackEndIcon className='bg-danger'/>
         <img 
             className="full-stack-img back-end-svg col-md-6 animation-direction-to-right-2s" 
             src={images.backEnd} alt="backEnd" 

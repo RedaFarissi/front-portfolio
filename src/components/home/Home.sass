@@ -105,19 +105,20 @@
 
 .full-stack
     margin-bottom: 24px 
+    overflow-x: hidden
     @media (max-width: 767px) 
         flex-direction: column-reverse
     .SvgBackEndIcon
         @include animationEngine("animationEngine", 125s)
-        width: 1300px
+        width: 255px
         position: absolute
-        top: 110vh
-        right:-50%
+        right:-0%
         opacity: 0.05
         .cls-1
             fill-rule: evenodd
         @media (max-width: 450px) 
             display: none
+            
     .full-stack-img
         fill: $bodyColor
         @media (max-width: 767px) 
@@ -186,6 +187,7 @@
                 color: $bodyColor-opacity-5
                 font-size: 20px
                 margin-top: 15px
+                display: flex
                 @media (max-width: 1200px) 
                     font-size: 18px
                 @media (max-width: 450px) 
@@ -194,4 +196,5 @@
                     font-size: 23px
                     -webkit-text-stroke: 0.7px black
                     margin-right: 20px
+                    margin-top: 4px
     
