@@ -7,9 +7,9 @@ import axios from 'axios';
 export default function ContactMe(props){
     const cadreImageRef = useRef(null);
     const [data, setData] = useState({   
-        title: 'Subject Title',
-        email: "reda@gmail.com",
-        message: "message to reda",
+        title: "",
+        email: "",
+        message: "",
     });
     const [sendMessage, setSendMessage] = useState(false);
     const [errorMessage, setErrorMessage] = useState(false);
@@ -58,9 +58,19 @@ export default function ContactMe(props){
             console.log("Message Error");
         }
    
-      
+        
     };
-
+    const handleEmailClick = () => {
+        const emailAddress = 'redaredaeskouni@example.com';
+        const subject = 'Subject of the email';
+        const body = 'Body of the email';
+    
+        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        
+        // Open the default email client
+        window.location.href = mailtoLink;
+      };
+    
     return(  
     <main onClick={props.asideHidden} className="contact-main">
         <div className="contact-map">
@@ -107,24 +117,24 @@ export default function ContactMe(props){
                 </div>
                 <ul className="animation-direction-to-right-5s">
                     <li>
-                        <a className="btn-github" href="https://github.com/RedaFarissi/"> 
+                        <a className="btn-github" href="https://github.com/RedaFarissi/" target="_blanck"> 
                             <span><i className="fab fa-github text-light"></i></span>
                         </a>
                     </li>
                     <li>
-                        <a className="btn-linkedin" href="#"> 
+                        <a className="btn-linkedin" href="https://www.linkedin.com/in/reda-eskouni-aa4361209/" target="_blanck"> 
                             <span><i className="fa-brands fa-linkedin-in text-light"></i></span>
                         </a>
                     </li>
                     <li>
-                        <a className="btn-facebook" href="#"> 
+                        <a className="btn-facebook" href="https://www.facebook.com/profile.php?id=100007840725728" target="_blanck"> 
                             <span><i className="fa-brands fa-facebook-f text-light"></i></span>
                         </a>
                     </li>
                     <li>
-                        <a className="btn-gmail" href="#"> 
+                        <div className="btn-gmail" onClick={handleEmailClick}> 
                             <span><i className="fab fa-google text-light"></i></span>
-                        </a>
+                        </div>
                     </li>
                 </ul>
             </div>
