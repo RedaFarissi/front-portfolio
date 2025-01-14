@@ -33,7 +33,7 @@ export default function Home(props){
         <h1 className="what-i-do text-center animation-direction-to-top">What I Do?</h1>
         <FrontEnd />
         <BackEnd />
-        <Cloud/>
+        {/* <Cloud/> */}
     </main>
     )
 }
