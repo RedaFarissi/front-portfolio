@@ -47,24 +47,24 @@ export default function ContactMe(props){
         formData.append('title', data.title);
         formData.append('email', data.email);
         formData.append('message', data.message);
-        setSendMessage(false);setErrorMessage(false);
+        setSendMessage(false);
+        setErrorMessage(false);
         try {
-            console.log("Before axios.post");
             const response = await axios.post(`${props.domain}/api/create-contact/`, formData);
-            if(response.data.msg === "Message Send Success") setSendMessage(true)
+            if(response.data.msg === "Message Send Success"){
+                setSendMessage(true);
+                setData({title:"" , email:"" , message:""})
+            }
             if(response.data.msg === "Message Error") setErrorMessage(true)
         } catch (error) {
             console.error("Error sending message:", error.response.data);
             console.log("Message Error");
         }
-   
-        
     };
     
     return(  
     <main onClick={props.asideHidden} className="contact-main">
         <div className="contact-map">
-        {console.log(123)}
             <div className="adress row">
                 <div className="adress-box col-md-6">
                     <a className="btn color-to-bg animation-direction-to-right-1s" href="https://maps.app.goo.gl/qyqYEMDmD9mTqkR3A" target="_blanck"> Visit on Google Maps </a>
