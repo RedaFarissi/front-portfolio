@@ -3,8 +3,6 @@ import SvgBackEndIcon from "./svg/SvgBackEndIcon"
 
 export default function BackEnd(){
     return(
-    <>
-    
     <div className="full-stack row">
         <SvgBackEndIcon className='bg-danger'/>
         <img 
@@ -32,6 +30,5 @@ export default function BackEnd(){
             </ul>
         </div>
     </div>
-    </>
     )
 }
