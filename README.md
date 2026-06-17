@@ -96,7 +96,3 @@ Feel free to connect with me:
 - GitHub: https://github.com/RedaFarissi
 - LinkedIn: https://www.linkedin.com/in/reda-eskouni-aa4361209/
 - Email: redaesskouni@gmail.com
-
-## 📄 License
-
-This project is open-source and available under the MIT License.
