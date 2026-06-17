@@ -36,29 +36,6 @@ export default function Education(props){
     
     <div className="degrees-received row">
         <div className="degrees-received-box-img col-lg-3">
-            <img  src={images.miage_logo} className="miage_logo animation-direction-to-right-1s" alt="miage logo" />
-        </div>
-        <div className="col-lg-9 mt-4 p-1">
-            <div className="card card-miage animation-direction-to-left-1s">
-                <div className="card-header d-flex justify-content-between align-items-center">
-                    <div>
-                        <h4>Header</h4>
-                        <p>paragragh</p>
-                    </div>
-                    <img  src={images.miage_logo} className="logo_inside_card" alt="miage logo" />
-                </div>
-                <div className="card-body">
-                  <h5 className="card-title">Success card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div dir='rtl' className="card-footer border-0">
-                    <button className="btn">Viste Website</button>
-                </div>
-            </div>
-        </div> 
-        
-
-        <div className="degrees-received-box-img col-lg-3">
             <img  src={images.ensa} className="ensa_logo animation-direction-to-right-2s" alt="ensa logo"/>
         </div>
         
@@ -66,20 +43,34 @@ export default function Education(props){
             <div className="card card-ensa">
                 <div className="card-header d-flex justify-content-between align-items-center">
                     <div>
-                        <h3>Header</h3>
-                        <p>paragragh</p>
+                        <h4>École Nationale des Sciences Appliquées (ENSA), Kénitra</h4>
                     </div>
                     <img  src={images.ensa} className="logo_inside_card ensa-chnage-width" alt="ensa logo" />
                 </div>
                 <div className="card-body">
-                  <h5 className="card-title">Success card title</h5>
-                  <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                </div>
-                <div dir='rtl' className="card-footer border-0">
-                    <button className="btn">Viste Website</button>
+                  <h5 className="card-title">Licence Professionnelle en Gestion de Bases de Données</h5>
+                  <p className="card-text">2020 - 2022</p>
                 </div>
             </div>
         </div>        
+
+        <div className="degrees-received-box-img col-lg-3 mt-5">
+            <img  src={images.miage_logo} className="miage_logo animation-direction-to-right-1s" alt="miage logo" />
+        </div>
+        <div className="col-lg-9 mt-4 p-1 mt-5">
+            <div className="card card-miage animation-direction-to-left-1s">
+                <div className="card-header d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4>Institut MIAGE, Sidi Slimane</h4>
+                    </div>
+                    <img  src={images.miage_logo} className="logo_inside_card" alt="miage logo" />
+                </div>
+                <div className="card-body">
+                  <h5 className="card-title">Technicien Spécialisé en Développement Informatique</h5>
+                  <p className="card-text">2020 - 2022</p>
+                </div>
+            </div>
+        </div> 
     </div>
 </main>
     )

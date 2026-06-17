@@ -61,7 +61,9 @@ export default function Project({removeSplash , asideHidden , observerAnimation}
             
         </div>
         <div className="d-flex justify-content-center align-items-center animation-direction-to-top rounded">
-            <a className="btn more-project text-center" href="https://github.com/RedaFarissi/">More Project</a>
+            <a className="btn more-project text-center" href="https://github.com/RedaFarissi/" target="_blanck">
+                More Project
+            </a>
         </div>
     </main>
     )
