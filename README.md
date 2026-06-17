@@ -84,6 +84,7 @@ Add screenshots of the portfolio here.
 ### Home Section
 <img src="screenshots/home.png" width="100%"/>
 <img src="screenshots/home2.png" width="100%"/>
+<img src="screenshots/home3.png" width="100%"/>
 
 ### Projects Section
 <img src="screenshots/projects.png" width="100%"/>
