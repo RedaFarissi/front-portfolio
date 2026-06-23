@@ -4,7 +4,7 @@ import {
 } from './components/path';
 import './App.sass';
 import React , { Component, createRef } from 'react';
-
+//import { HashRouter as Router, Routes, Route } from "react-router-dom";
 
 class App extends Component {
   
