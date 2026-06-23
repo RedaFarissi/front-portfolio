@@ -1,7 +1,7 @@
 # 🚀 Reda Eskouni Portfolio
 [![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge)](https://redafarissi.github.io/front-portfolio/)  
 
-🔗 **Live Demo:**   [https://redafarissi.github.io/front-portfolio/](https://redafarissi.github.io/front-portfolio/) ⬅️ 
+🔗 **Live Demo:**  ➡️ [https://redafarissi.github.io/front-portfolio/](https://redafarissi.github.io/front-portfolio/) ⬅️ 
 
 #### A modern and responsive personal portfolio website built with React.js to showcase my skills, education, projects, and contact information.
 
