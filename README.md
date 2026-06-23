@@ -1,7 +1,11 @@
-<img src="screenshots/home.png" width="100%"/>
 # 🚀 Reda Eskouni Portfolio
 
+🔗 **Live Demo:** [https://redafarissi.github.io/front-portfolio/](https://redafarissi.github.io/front-portfolio/)
+
 A modern and responsive personal portfolio website built with React.js to showcase my skills, education, projects, and contact information.
+
+
+<img src="screenshots/home.png" width="100%"/>
 
 ## 📋 Overview
 
