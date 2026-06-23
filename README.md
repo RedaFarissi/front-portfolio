@@ -1,5 +1,5 @@
 # 🚀 Reda Eskouni Portfolio
-[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge)](https://redafarissi.github.io/parchessi-algo/)
+[![Live Demo](https://img.shields.io/badge/Demo-Live-brightgreen?style=for-the-badge)](https://redafarissi.github.io/front-portfolio/)
 
 🔗 **Live Demo:**   [https://redafarissi.github.io/front-portfolio/](https://redafarissi.github.io/front-portfolio/)
 
